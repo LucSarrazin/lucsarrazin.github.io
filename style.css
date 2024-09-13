@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     line-height: 1.6;
 }
 .navbar {
@@ -72,4 +72,21 @@ a {
 a:hover {
     color: inherit; /* Garde la même couleur au survol */
     text-decoration: none; /* Supprime le soulignement au survol */
+}
+
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.carousel-item img{
+    opacity: 0.3;
+}
+.flecheMonter{
+    display: flex;
+    position: fixed;
+    margin-top: 45%;
+    margin-left: 97%;
 }
