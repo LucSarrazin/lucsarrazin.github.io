@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "particles.js": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   }
 }
