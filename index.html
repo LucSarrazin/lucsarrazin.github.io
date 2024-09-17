@@ -73,7 +73,9 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item" style="position: absolute; left: 95%;">
-                        <a class="nav-link" ><i class="bi bi-moon-fill fs-2"></i></a>
+                        <a class="nav-link" style="cursor: pointer;" onclick="toggleDarkMode()">
+                            <i class="bi bi-moon-fill fs-2"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -155,7 +157,7 @@
                     <br>
                     <h6>Java :</h6>
                     <div class="progress">
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                     </div>
                 </div>
             </div>
@@ -430,13 +432,28 @@
                 <div class="col-md-4">
                     <a href="" height="10000">
                     <div class="card">
-                        <iframe src=""></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Système de discussion</h5>
-                            <h6 class="card-title">Mars 2023 - Mars 2023</h6>
-                            <p class="card-text">Voici un système de discussion (CHAT) relié avec le système d'authentification précédemment créer, l'utilisation se fait à l'aide d'une base de données MySQL, codé avec du HTML, du CSS, du JavaScript et du PHP.</p>
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <a href="Projets\hors scolaire\2023\Projet2\SystemeChat.png" target="_blank" rel="noopener noreferrer">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                  <img src="Projets\hors scolaire\2023\Projet2\SystemeChat.png" class="d-block w-100" alt="..." >
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Interface d'authentification</h5>
+                                    <p>La page d'authentification du site.</p>
+                                  </div>
+                                </div>
+                                </a>
+                            </div>
+                          </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Système de discussion</h5>
+                                <h6 class="card-title">Mars 2023 - Mars 2023</h6>
+                                <p class="card-text">Voici un système de discussion (CHAT) relié avec le système d'authentification précédemment créer, l'utilisation se fait à l'aide d'une base de données MySQL, codé avec du HTML, du CSS, du JavaScript et du PHP.</p>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-md-4">
@@ -644,6 +661,9 @@
                     </a>
                     </div>
                 </div>
+
+                <div class="row mb-4"></div>
+
                 <div class="col-md-4">
                     <div class="card2 h-100" style="background: url('ImagesVeille/DeepMindGoogle.png'); background-size: cover; color: black; border: solid black 5px; border-radius: 5%;">
                         <a href="https://trustmyscience.com/google-deepmind-cree-ia-generant-jeux-video-a-partir-texte-ou-image/" target="_blank">
@@ -733,6 +753,26 @@
             backSpeed : 40,
             loop : true
         });
+
+        function toggleDarkMode() {
+            // Toggle the Bootstrap theme
+            if (document.documentElement.getAttribute('data-bs-theme') === 'dark') {
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+            }
+
+            // Change all elements with class 'bg-light' to 'bg-dark' and vice versa
+            document.querySelectorAll('.bg-light, .bg-secondary').forEach(element => {
+                if (element.classList.contains('bg-light')) {
+                    element.classList.remove('bg-light');
+                    element.classList.add('bg-secondary');
+                } else  {
+                    element.classList.remove('bg-secondary');
+                    element.classList.add('bg-light');
+                }
+            });
+        }
     </script>
 
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
