@@ -90,6 +90,7 @@ a:hover {
     bottom: 20px; /* Ajuste cette valeur pour la hauteur par rapport au bas de l'écran */
     right: 20px;  /* Ajuste cette valeur pour l'espacement depuis le bord droit */
     cursor: pointer; /* Pour indiquer qu'il est cliquable */
+    z-index: 1000;
 }
 /* Ajustement pour les écrans plus petits */
 @media (max-width: 576px) { /* Cible les écrans de moins de 576px */
@@ -97,6 +98,7 @@ a:hover {
         bottom: 10px; /* Ajuste l'espacement bas */
         right: 10px;  /* Ajuste l'espacement droit */
         transform: scale(0.8); /* Réduit un peu la taille pour s'adapter */
+        z-index: 1000;
     }
 }
 #particles-js {
