@@ -84,13 +84,13 @@ a:hover {
 .carousel-item img{
     opacity: 0.3;
 }
-.flecheMonter{
+.flecheMonter {
     display: flex;
     position: fixed;
-    margin-top: 45%;
-    margin-left: 97%;
+    bottom: 20px; /* Ajuste cette valeur pour la hauteur par rapport au bas de l'écran */
+    right: 20px;  /* Ajuste cette valeur pour l'espacement depuis le bord droit */
+    cursor: pointer; /* Pour indiquer qu'il est cliquable */
 }
-
 #particles-js {
     position: absolute;
     margin: 0 auto;
