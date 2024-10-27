@@ -48,17 +48,28 @@ body {
 .card2 {
     position: relative; /* Position relative pour le conteneur */
     color: white; /* Couleur de texte par défaut */
+    overflow: hidden; /* Pour s'assurer que les éléments à l'extérieur du conteneur ne débordent pas */
 }
 
 .card2::before {
-    content: ""; /* Nécessaire pour créer une pseudo-élément */
+    content: ""; /* Nécessaire pour créer un pseudo-élément */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Couleur de superposition avec transparence */
+    background: rgba(0, 0, 0, 0.7); /* Couleur de superposition avec plus de transparence */
     z-index: 1; /* Mettre la superposition derrière le texte */
+}
+
+.card2 img {
+    filter: blur(5px); /* Appliquer un flou à l'image de fond */
+    width: 100%; /* S'assurer que l'image remplit le conteneur */
+    height: 100%; /* S'assurer que l'image remplit le conteneur */
+    position: absolute; /* Position absolue pour l'image */
+    top: 0; /* Aligner en haut */
+    left: 0; /* Aligner à gauche */
+    z-index: 0; /* Mettre l'image derrière tout */
 }
 
 .card-body {
@@ -67,7 +78,7 @@ body {
 }
 
 h8.card-text, h5.card-title {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre au texte pour le rendre plus lisible */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Ombre au texte pour le rendre encore plus lisible */
 }
 .card2:hover{
     opacity: 1;
