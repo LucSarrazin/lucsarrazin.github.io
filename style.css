@@ -45,9 +45,29 @@ body {
     height: 200px;
     object-fit: cover;
 }
-.card2 {  
-    opacity: 0.3;
-    transition-duration: 1s;
+.card2 {
+    position: relative; /* Position relative pour le conteneur */
+    color: white; /* Couleur de texte par défaut */
+}
+
+.card2::before {
+    content: ""; /* Nécessaire pour créer une pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Couleur de superposition avec transparence */
+    z-index: 1; /* Mettre la superposition derrière le texte */
+}
+
+.card-body {
+    position: relative; /* Position relative pour que le texte soit au-dessus de la superposition */
+    z-index: 2; /* Met le texte au-dessus de la superposition */
+}
+
+h8.card-text, h5.card-title {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre au texte pour le rendre plus lisible */
 }
 .card2:hover{
     opacity: 1;
