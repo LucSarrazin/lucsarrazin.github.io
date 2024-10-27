@@ -49,6 +49,7 @@ body {
     opacity: 0.3;
     transition-duration: 1s;
 }
+
 .card2:hover{
     opacity: 1;
 }
