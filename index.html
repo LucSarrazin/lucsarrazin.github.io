@@ -52,12 +52,12 @@
                             <li><a class="dropdown-item" href="#1er">1ère année</a></li>
                             <li><a class="dropdown-item" href="#2eme">2ème année</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><h6 class="dropdown-header">Projets Personnelles</h6></li>
+                            <li><h6 class="dropdown-header">Projets Personnels</h6></li>
                             <li><a class="dropdown-item" href="#p2024">Projet 2024</a></li>
                             <li><a class="dropdown-item" href="#p2023">Projet 2023</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header">Jeux vidéos</h6></li>
-                            <li><a class="dropdown-item" href="#complete">Publiés</a></li>
+                            <li><a class="dropdown-item" href="#complete">Jouables</a></li>
                             <li><a class="dropdown-item" href="#prototype">Prototypes</a></li>
                         </ul>
                     </li>
@@ -74,7 +74,10 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item" style="position: absolute; left: 95%;">
-                        <a class="nav-link" style="cursor: pointer;" onclick="toggleDarkMode()">
+                        <a class="nav-link" style="cursor: pointer; padding: 5px 5px; transition: background 0.3s;" 
+                           onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.1)'" 
+                           onmouseout="this.style.backgroundColor=''" 
+                           onclick="toggleDarkMode()">
                             <i class="bi bi-moon-fill fs-2"></i>
                         </a>
                     </li>
@@ -254,96 +257,442 @@
             </div>
         </div>
     </section>
-   
+
 
     <!-- Projects Section -->
     <section id="projects" class="section bg-light">
         <div class="container">
-            <h2 class="text-center">Mes projets scolaires</h2>
-            <div class="divider"></div>
-            <h2 class="text-center" id="1er">1er année</h2>
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="Projets\D.M. d'Algo. - Programmation_Le nombre mystérieux par Luc Sarrazin & Mathis Coco.pdf" target="_blank">
-                    <div class="card">
-                        <iframe src="Projets\D.M. d'Algo. - Programmation_Le nombre mystérieux par Luc Sarrazin & Mathis Coco.pdf"></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Jeu du Nombres Mystérieux</h5>
-                            <h6 class="card-title">nov. 2023 - nov. 2023</h6>
-                            <p class="card-text">Un jeu où le 2ème joueur doit deviner le chiffre que le 1er joueur a écrit en Java.</p>
+    <h2 class="text-center">Mes projets scolaires</h2>
+    <div class="divider"></div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <center>
+                    <h2 class="text-center" id="1er">1er année</h2>
+                    <div class="divider"></div>
+                </center>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="Projets\D.M. d'Algo. - Programmation_Le nombre mystérieux par Luc Sarrazin & Mathis Coco.pdf" target="_blank">
+                        <div class="card">
+                            <iframe src="Projets\D.M. d'Algo. - Programmation_Le nombre mystérieux par Luc Sarrazin & Mathis Coco.pdf"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Jeu du Nombres Mystérieux</h5>
+                                <h6 class="card-title">nov. 2023 - nov. 2023</h6>
+                                <p class="card-text">Un jeu où le 2ème joueur doit deviner le chiffre que le 1er joueur a écrit en Java.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="Projets\DM-JAVA-JAVASCRIPT sekou et moi.pdf" target="_blank">
-                    <div class="card">
-                        <iframe src="Projets\DM-JAVA-JAVASCRIPT sekou et moi.pdf"></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Jeu du devine mot et calculatrice graphique</h5>
-                            <h6 class="card-title">Jan. 2024 - Fév. 2024</h6>
-                            <p class="card-text">En Java, c'est un jeu de devinette entre deux personnes : l’une écrit le mot et le deuxième doit le deviner avec un nombre de tours limités.</p>
-                                <p class="card-text">En JavaScript, il s'agit d'une calculatrice avec une interface graphique pour l’utilisateur afin de faciliter son utilisation.</p>
-                        </div>
-                    </div>
                     </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="Projets\DM-JAVA-JAVASCRIPT max et moi.pdf" target="_blank">
-                    <div class="card">
-                        <iframe src="Projets\DM-JAVA-JAVASCRIPT max et moi.pdf"></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Un GPS, un tri par sélection, un tri par propagation</h5>
-                            <h6 class="card-title">Fév. 2024 - Avr. 2024</h6>
-                            <p class="card-text">En Java, c'est une sorte de GPS qui indique les distances entre les villes saisies par l’utilisateur, via une sélection de neuf villes.</p>
-                            <p class="card-text">En Java, c'est un tri par sélection pour trier des chiffres en prenant le plus petit et en permutant les autres à gauche.</p>
-                            <p class="card-text">En Java, c'est un tri par propagation pour trier des chiffres en prenant le plus grand et en les plaçant à droite.</p>
-                        </div>
                     </div>
-                </a>
+                    <div class="col-md-4">
+                        <a href="Projets\DM-JAVA-JAVASCRIPT sekou et moi.pdf" target="_blank">
+                        <div class="card">
+                            <iframe src="Projets\DM-JAVA-JAVASCRIPT sekou et moi.pdf"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Jeu du devine mot et calculatrice graphique</h5>
+                                <h6 class="card-title">Jan. 2024 - Fév. 2024</h6>
+                                <p class="card-text">En Java, c'est un jeu de devinette entre deux personnes : l’une écrit le mot et le deuxième doit le deviner avec un nombre de tours limités.</p>
+                                    <p class="card-text">En JavaScript, il s'agit d'une calculatrice avec une interface graphique pour l’utilisateur afin de faciliter son utilisation.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Projets\DM-JAVA-JAVASCRIPT max et moi.pdf" target="_blank">
+                        <div class="card">
+                            <iframe src="Projets\DM-JAVA-JAVASCRIPT max et moi.pdf"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Un GPS, un tri par sélection, un tri par propagation</h5>
+                                <h6 class="card-title">Fév. 2024 - Avr. 2024</h6>
+                                <p class="card-text">En Java, c'est une sorte de GPS qui indique les distances entre les villes saisies par l’utilisateur, via une sélection de neuf villes.</p>
+                                <p class="card-text">En Java, c'est un tri par sélection pour trier des chiffres en prenant le plus petit et en permutant les autres à gauche.</p>
+                                <p class="card-text">En Java, c'est un tri par propagation pour trier des chiffres en prenant le plus grand et en les plaçant à droite.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
             </div>
-            <h2 class="text-center" id="2eme">2ème année</h2>
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="">
-                    <div class="card">
-                        <iframe src=""></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Projet 1</h5>
-                            <h6 class="card-title">mois. année - mois. année</h6>
-                            <p class="card-text">Description du projet.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <center>
+                    <h2 class="text-center" id="2eme">2ème année</h2>
+                    <div class="divider"></div>
+                </center>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="">
+                        <div class="card">
+                            <iframe src=""></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 1</h5>
+                                <h6 class="card-title">mois. année - mois. année</h6>
+                                <p class="card-text">Description du projet.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="" height="10000">
-                    <div class="card">
-                        <iframe src=""></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Projet 2</h5>
-                            <h6 class="card-title">mois. année - mois. année</h6>
-                            <p class="card-text">Description du projet.</p>
-                        </div>
-                    </div>
                     </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="">
-                    <div class="card">
-                        <iframe src=""></iframe>
-                        <div class="card-body">
-                            <h5 class="card-title">Projet 3</h5>
-                            <h6 class="card-title">mois. année - mois. année</h6>
-                            <p class="card-text">Description du projet.</p>
-                        </div>
                     </div>
-                </a>
+                    <div class="col-md-4">
+                        <a href="" height="10000">
+                        <div class="card">
+                            <iframe src=""></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 2</h5>
+                                <h6 class="card-title">mois. année - mois. année</h6>
+                                <p class="card-text">Description du projet.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="">
+                        <div class="card">
+                            <iframe src=""></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 3</h5>
+                                <h6 class="card-title">mois. année - mois. année</h6>
+                                <p class="card-text">Description du projet.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
             </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <br>
+    <h2 class="text-center">Mes projets personnels</h2>
+    <div class="divider"></div>
+    <div class="accordion" id="accordionPerso">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePERSO" aria-expanded="true" aria-controls="collapseOnePERSO">
+                <center>
+                  <h2 class="text-center" id="p2024">Projet 2024</h2>
+                  <div class="divider"></div>
+                </center>
+            </button>
+          </h2>
+          <div id="collapseOnePERSO" class="accordion-collapse collapse show" data-bs-parent="#accordionPerso">
+            <div class="accordion-body">
+              <div class="row">
+                  <div class="col-md-4">
+                      <a href="">
+                      <div class="card">
+                          <iframe src=""></iframe>
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 1</h5>
+                              <h6 class="card-title">mois. année - mois. année</h6>
+                              <p class="card-text">Description du projet.</p>
+                          </div>
+                      </div>
+                  </a>
+                  </div>
+                  <div class="col-md-4">
+                      <a href="" height="10000">
+                      <div class="card">
+                          <iframe src=""></iframe>
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 2</h5>
+                              <h6 class="card-title">mois. année - mois. année</h6>
+                              <p class="card-text">Description du projet.</p>
+                          </div>
+                      </div>
+                      </a>
+                  </div>
+                  <div class="col-md-4">
+                      <a href="">
+                      <div class="card">
+                          <iframe src=""></iframe>
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 3</h5>
+                              <h6 class="card-title">mois. année - mois. année</h6>
+                              <p class="card-text">Description du projet.</p>
+                          </div>
+                      </div>
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPERSO" aria-expanded="false" aria-controls="collapseTwoPERSO">
+                <center>
+                  <h2 class="text-center" id="p2023">Projet 2023</h2>
+                  <div class="divider"></div>
+                </center>
+            </button>
+          </h2>
+          <div id="collapseTwoPERSO" class="accordion-collapse collapse" data-bs-parent="#accordionPerso">
+      <div class="accordion-body">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          </div>
+                          <div class="carousel-inner">
+                              <a href="Projets\hors scolaire\2023\Projet1\InterfaceDauthentification.png" target="_blank" rel="noopener noreferrer">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="Projets\hors scolaire\2023\Projet1\InterfaceDauthentification.png" class="d-block w-100" alt="..." >
+                                <div class="carousel-caption d-block">
+                                  <h5>Interface d'authentification</h5>
+                                  <p>La page d'authentification du site.</p>
+                                </div>
+                              </div>
+                              </a>
+                              <a href="Projets\hors scolaire\2023\Projet1\ImageBaseDeDonnée.png" target="_blank" rel="noopener noreferrer">
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="Projets\hors scolaire\2023\Projet1\ImageBaseDeDonnée.png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5>Base de donnée SQL</h5>
+                                <p>Extrait de la base de donnée avec les mots de passe hashée.</p>
+                              </div>
+                            </div>
+                          </a>
+                            <a href="Projets\hors scolaire\2023\Projet1\BonIdentifiantMauvaisMdp.png" target="_blank" rel="noopener noreferrer">
+                            <div class="carousel-item">
+                              <img src="Projets\hors scolaire\2023\Projet1\BonIdentifiantMauvaisMdp.png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5>Mauvais mot de passe</h5>
+                                <p>Après un bon identifiant mais un mauvais mot de passe.</p>
+                              </div>
+                            </div>
+                          </a>
+                            <a href="Projets\hors scolaire\2023\Projet1\CompteConnectee.png" target="_blank" rel="noopener noreferrer">
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="Projets\hors scolaire\2023\Projet1\CompteConnectee.png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5>Utilisateur connecter</h5>
+                                <p>Le site lorsque l'utilisateur est connecter.</p>
+                              </div>
+                            </div>
+                          </a>
+                            <a href="Projets\hors scolaire\2023\Projet1\CreationDuCompte.png" target="_blank" rel="noopener noreferrer">
+                            <div class="carousel-item">
+                              <img src="Projets\hors scolaire\2023\Projet1\CreationDuCompte.png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5>Création du compte</h5>
+                                <p>La page lorsque le compte est créer.</p>
+                              </div>
+                            </div>
+                          </a>
+                            <a href="Projets\hors scolaire\2023\Projet1\CreationDuCompteEchouee.png" target="_blank" rel="noopener noreferrer">
+                            <div class="carousel-item">
+                              <img src="Projets\hors scolaire\2023\Projet1\CreationDuCompteEchouee.png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5>Création du compte échouée</h5>
+                                <p>La page lorsque la création du compte a échouée.</p>
+                              </div>
+                            </div>
+                          </a>
+                            <a href="Projets\hors scolaire\2023\Projet1\MauvaisIdentifiant.png" target="_blank" rel="noopener noreferrer">
+                            <div class="carousel-item">
+                              <img src="Projets\hors scolaire\2023\Projet1\MauvaisIdentifiant.png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5>Mauvais identifiant</h5>
+                                <p>Lorsqu'on rentre un mauvais identifiant.</p>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Un système d'authentification</h5>
+                          <h6 class="card-title">Fév. 2023 - Fév. 2023</h6>
+                          <p class="card-text">Voici un système d'authentification qui permet de créer un compte et de s'y connecter à l'aide d'une base de données MySQL, codé avec du HTML, du CSS, du JavaScript et du PHP.</p>
+                      </div>
+                  </div>
+              </a>
+              </div>
+              <div class="col-md-4">
+                  <a href="" height="10000">
+                  <div class="card">
+                      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          </div>
+                          <div class="carousel-inner">
+                              <a href="Projets\hors scolaire\2023\Projet2\SystemeChat.png" target="_blank" rel="noopener noreferrer">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="Projets\hors scolaire\2023\Projet2\SystemeChat.png" class="d-block w-100" alt="..." >
+                                <div class="carousel-caption d-block">
+                                  <h5>Page du chat</h5>
+                                  <p>Les pages auxquelles les gens peuvent discuter.</p>
+                                </div>
+                              </div>
+                              </a>
+                          </div>
+                        </div>
+                          <div class="card-body">
+                              <h5 class="card-title">Système de discussion</h5>
+                              <h6 class="card-title">Mars 2023 - Mars 2023</h6>
+                              <p class="card-text">Voici un système de discussion (CHAT) relié au système d'authentification précédemment créé. L'utilisation se fait à l'aide d'une base de données MySQL, codé avec du HTML, du CSS, du JavaScript et du PHP.</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-md-4">
+                  <a href="">
+                  <div class="card">
+                      <iframe src=""></iframe>
+                      <div class="card-body">
+                          <h5 class="card-title">Projet 3</h5>
+                          <h6 class="card-title">mois. année - mois. année</h6>
+                          <p class="card-text">Description du projet.</p>
+                      </div>
+                  </div>
+              </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <br>
+    <h2 class="text-center">Mes jeux vidéos</h2>
+    <div class="divider"></div>
+    <div class="accordion" id="accordionJeux">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneJeux" aria-expanded="true" aria-controls="collapseOneJeux">
+                <center>
+                    <h2 class="text-center" id="complete">Mes jeux jouables</h2>
+                    <div class="divider"></div>
+                </center>
+            </button>
+          </h2>
+          <div id="collapseOneJeux" class="accordion-collapse collapse show" data-bs-parent="#accordionJeux">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.BallBasket">
+                        <div class="card">
+                            <img src="https://play-lh.googleusercontent.com/772uDnoxvupnxLJQ2rjWFlJnHO9zNuvqHeiPj_svrV8rH82l4nlp3tWRwiw5yvRXUMU=w2560-h1440-rw">
+                            <div class="card-body">
+                                <h5 class="card-title">Ball Basket</h5>
+                                <h6 class="card-title">nov. 2022 - mars 2023</h6>
+                                <p class="card-text">Ball Basket est un jeu de réflexion dont le but est d'envoyer une balle dans un panier de basket en utilisant la physique et certaines nouvelles mécaniques ajoutées au fur et à mesure des niveaux.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.HALLOWEENHUNT">
+                        <div class="card">
+                            <img src="https://play-lh.googleusercontent.com/tCgjRN77nurZYrrkupPemEeQxwGHGTjZ-NOC1BdWgrxjKr_HH8mqPdUbLgqPBCqtGHA=w2560-h1440-rw">
+                            <div class="card-body">
+                                <h5 class="card-title">Halloween Hunt</h5>
+                                <h6 class="card-title">oct. 2022 - oct. 2022</h6>
+                                <p class="card-text">Un jeu pour Halloween réalisé en 2 heures, dans le style de Dinosaur Chrome.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.com.Lucleterrible.Destroy.DestroyAllOfThem">
+                        <div class="card">
+                            <img src="https://play-lh.googleusercontent.com/VNX5dL78p0d36fXEEiidU1EIbbV5HrmLKMlThiG580qlJ6vxhBPnXDJ8-jMoKGeJ1SwL=w2560-h1440-rw">
+                            <div class="card-body">
+                                <h5 class="card-title">Destroy All Of Them</h5>
+                                <h6 class="card-title">juil. 2022 - juil. 2022</h6>
+                                <p class="card-text">C'est un jeu de rapidité où l'objectif est de détruire le plus de boules possible dans un temps imparti, avec différents niveaux de difficulté.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoJeux" aria-expanded="false" aria-controls="collapseTwoJeux">
+                <center>
+                    <h2 class="text-center" id="prototype">Mes prototypes de jeux</h2>
+                    <div class="divider"></div>
+                </center>
+            </button>
+          </h2>
+          <div id="collapseTwoJeux" class="accordion-collapse collapse" data-bs-parent="#accordionJeux">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="">
+                        <div class="card">
+                            <iframe src=""></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 1</h5>
+                                <h6 class="card-title">mois. année - mois. année</h6>
+                                <p class="card-text">Description du projet.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="" height="10000">
+                        <div class="card">
+                            <iframe src=""></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 2</h5>
+                                <h6 class="card-title">mois. année - mois. année</h6>
+                                <p class="card-text">Description du projet.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="">
+                        <div class="card">
+                            <iframe src=""></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 3</h5>
+                                <h6 class="card-title">mois. année - mois. année</h6>
+                                <p class="card-text">Description du projet.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   <!--
+            
             <br>
             <h2 class="text-center">Mes projets personnelles</h2>
             <div class="divider"></div>
@@ -562,7 +911,8 @@
                         </div>
                     </div>
                 </a>
-                </div><h2 class="text-center" id="prototype">Mes prototypes de jeux</h2>
+                </div>
+                <h2 class="text-center" id="prototype">Mes prototypes de jeux</h2>
                 <div class="divider"></div>
                 <div class="row">
                     <div class="col-md-4">
@@ -601,7 +951,7 @@
                         </div>
                     </a>
                     </div>
-            </div>
+            </div>-->
         </div>
     </section>
     
@@ -658,6 +1008,8 @@
             </div>
         </div>
     </section>
+
+
  
 
 
@@ -671,11 +1023,112 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 p-0 text-center mx-auto">
                     <p>Une veille informatique, c’est un peu comme rester à l’affût de tout ce qui se passe dans le monde de la tech. Tu cherches et analyses les nouvelles tendances, les menaces et les innovations (nouveaux logiciels, gadgets, etc.). L'idée, c’est d’être au courant des changements pour savoir comment cela pourrait t’aider ou t’affecter, que tu sois un développeur ou simplement passionné par l’informatique. Bref, c’est se tenir toujours informé pour ne pas être dépassé.</p>
+                <p>J'ai utiliser le site internet Feedly pour m'abonner et suivres des flux afins de recevoir des</p>
                 </div>
             </div>
             <h2 class="text-center">L'IA dans les Jeux Vidéo : Révolution ou Simple Évolution ?</h2>
             <div class="divider"></div>
             <br>
+            <!-- Timeline container -->
+        <div class="timeline">
+
+            <div class="timeline-item row align-items-center my-4">
+                <div class="col-md-6">
+                    <a href="https://www.jeuxvideo.com/news/1919777/les-ia-vont-piquer-le-boulot-des-developpeurs-elles-creent-des-jeux-video-en-temps-reel-et-doom-est-leur-nouvelle-victime.htm" target="_blank">
+                        <div class="card bg-secondary text-light p-4" id="cardV">
+                            <h4>03 Septembre 2024</h4>
+                            <h5>LES IA VONT-ELLES PIQUER LE BOULOT DES DÉVELOPPEURS ?</h5>
+                            <p>L’intelligence artificielle est le dernier phénomène des industries de la tech, au point où toutes les entreprises (ou presque) souhaitent développer leur propre IA. Récemment, Google a dévoilé une avancée majeure en révélant un moteur de jeu entièrement fondé sur ce principe.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images4.alphacoders.com/137/thumb-1920-1372385.png" alt="Image 1" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            
+            <div class="timeline-item row align-items-center my-4">
+                <div class="col-md-6 order-md-2">
+                    <a href="https://www.jeuxvideo.com/news/1896715/ne-nourrissez-pas-l-ia-avec-nos-travaux-ce-studio-de-jeux-video-hausse-le-ton-face-a-l-intelligence-artificielle.htm" target="_blank">
+                        <div class="card bg-secondary text-light p-4" id="cardV">
+                            <h4>21 juin 2024</h4>
+                            <h5>« NE NOURRISSEZ PAS L'IA AVEC NOS TRAVAUX ! » CE STUDIO DE JEUX VIDÉO HAUSSE LE TON FACE À L'INTELLIGENCE ARTIFICIELLE.</h5>
+                            <p>L’utilisation de l’intelligence artificielle générative est particulièrement mal vue par les artistes. En effet, ces derniers rappellent régulièrement que cette technologie ne fait que reprendre le travail de milliers d’artistes sans jamais leur demander leur accord.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <img src="https://image.jeuxvideo.com/medias-crop-1200-675/171890/1718901216-3110-card.jpg" alt="Image 2" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            
+            <div class="timeline-item row align-items-center my-4">
+                <div class="col-md-6">
+                    <a href="https://www.bfmtv.com/tech/gaming/le-futur-du-jeu-video-on-a-teste-le-premier-jeu-dont-les-personnages-sont-des-intelligences-artificielles_AV-202403270021.html" target="_blank">
+                        <div class="card bg-secondary text-light p-4" id="cardV">
+                            <h4>27 Mars 2024</h4>
+                            <h5>LE FUTUR DU JEU VIDÉO ? ON A TESTÉ LE PREMIER JEU DONT LES PERSONNAGES SONT DES INTELLIGENCES ARTIFICIELLES.</h5>
+                            <p>La semaine passée, lors de la conférence des développeurs GDC à San Francisco (Californie), Ubisoft a sans doute apporté un début de réponse avec la présentation de Neo NPC, son IA générative conçue pour animer des personnages non jouables (PNJ).</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.bfmtv.com/Eh0WnZ1ZDy6HsDqpuMZIB11gx8E=/0x0:1920x1080/1920x0/images/Neo-NPC-Ubisoft-1832300.jpg" alt="Image 3" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            
+            <div class="timeline-item row align-items-center my-4">
+                <div class="col-md-6 order-md-2">
+                    <a href="https://trustmyscience.com/google-deepmind-cree-ia-generant-jeux-video-a-partir-texte-ou-image/" target="_blank">
+                        <div class="card bg-secondary text-light p-4" id="cardV">
+                            <h4>07 Mars 2024</h4>
+                            <h5>IA GÉNÉRANT DES JEUX VIDÉO À PARTIR DE TEXTE OU D’UNE SEULE IMAGE</h5>
+                            <p>Dés ormais, nul besoin de maîtriser la programmation pour en concevoir les bases, grâce à une nouvelle IA de Google, un système capable de générer des jeux vidéo à partir d’une simple instruction textuelle ou d’une seule image.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <img src="ImagesVeille/DeepMindGoogle.png" alt="Image 4" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            
+            <div class="timeline-item row align-items-center my-4">
+                <div class="col-md-6">
+                    <a href="https://www.bfmtv.com/tech/gaming/creer-mieux-et-plus-beau-comment-ubisoft-utilise-l-ia-dans-les-jeux-video_AV-202310310358.html" target="_blank">
+                        <div class="card bg-secondary text-light p-4" id="cardV">
+                            <h4>31 Octobre 2023</h4>
+                            <h5>COMMENT UBISOFT UTILISE L’IA DANS LES JEUX VIDÉO.</h5>
+                            <p>On ne s’en rend pas forcément compte, mais dans un jeu vidéo, l’intelligence artificielle est désormais partout. Elle permet une évolution du talent artistique et technique, et les jeux vidéo se saisissent des nouvelles technologies.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="ImagesVeille/Ubisoft.jpg" alt="Image 5" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            
+            <div class="timeline-item row align-items-center my-4">
+                <div class="col-md-6 order-md-2">
+                    <a href="https://www.tomshardware.fr/lintelligence-artificielle-va-remplacer-les-scenaristes-des-jeux-microsoft/" target="_blank">
+                        <div class="card bg-secondary text-light p-4" id="cardV">
+                            <h4>07 Novembre 2023</h4>
+                            <h5>MICROSOFT VA REMPLACER LES SCÉNARISTES DES JEUX PAR L'IA.</h5>
+                            <p>Microsoft veut maintenant intégrer l’intelligence artificielle dans le processus de création de jeux vidéo. L’entreprise souhaite remplacer l’écriture de contenu par l’IA plutôt que par des scénaristes professionnels.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <img src="ImagesVeille/Microsoft.jpg" alt="Image 6" class="img-fluid rounded">
+                </div>
+            </div>
+            
+        </div>
+<!--
             <div class="row">
                 <div class="col-md-4">
                     <div class="card2 h-100" style="background: url('https://images4.alphacoders.com/137/thumb-1920-1372385.png'); background-size: cover; color: black; border: solid black 5px; border-radius: 5%;">
@@ -687,7 +1140,7 @@
                             <p class="card-text" style="color: white;">L’intelligence artificielle est le dernier phénomène des industries de la tech, au point où toutes les entreprises (ou presque) souhaitent développer leur propre IA. Récemment, Google a dévoilé une avancée majeure en révélant un moteur de jeu entièrement fondé sur ce principe.</p>
                             </b>
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -760,7 +1213,7 @@
                 </a>
                 </div>
             </div>
-        </div>
+        </div>-->
     </section>
 
     <!-- Contact Section -->
