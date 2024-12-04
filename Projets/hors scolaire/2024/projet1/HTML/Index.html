@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Calculateur IMC (BIM)</h1></center>
+    <div id="form">
+        <center><h1>Calculer votre IMC</h1></center>
+        <h2>Veuillez rentrez votre poids : <input type="text" id="poids"></h2>
+        <h2>Veuillez rentrez votre taille : <input type="text" id="taille"></h2>
+        <button onclick="CalculerIMC()">Calculer</button>
+        <p>Vous êtes actuellement <b id="categorie">....</b> et votre IMC est de : <b id="imc"> ....</b></p>
+        <li>
+            <b>Le calculateur fait comme calcule : son poids divisé par sa taille au carré.</b>
+        </li>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>

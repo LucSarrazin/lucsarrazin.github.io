@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(109, 238, 206);
+}
+#form{
+    position: absolute;
+    top: 20%;
+    right: 23%;
+    background-color: rgb(75, 195, 243);
+    border-radius: 2%;
+    border: 10px solid rgb(41, 78, 243);
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#form h1{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    color: rgb(175, 7, 7);
+}
+#form li{
+    margin-top: 3%;
+}
