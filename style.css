@@ -53,6 +53,12 @@ body {
 .card2:hover{
     opacity: 1;
 }
+.card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem; /* Exemple d'arrondi */
+}
+
 
 #cardV{
     opacity: 0.3 !important;
