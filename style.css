@@ -4,6 +4,9 @@ body {
 }
 .navbar {
     background-color: #3a4b5b;
+    left: 0;
+    right: 0;
+    z-index: 10000;
 }
 .navbar-brand {
     font-weight: bold;
@@ -57,6 +60,9 @@ body {
     width: 100%;
     overflow: hidden;
     border-radius: 0.5rem; /* Exemple d'arrondi */
+}
+#lune{
+    top: 0;
 }
 
 
