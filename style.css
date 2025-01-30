@@ -113,6 +113,133 @@ a:hover {
     right: 20px;  /* Ajuste cette valeur pour l'espacement depuis le bord droit */
     cursor: pointer; /* Pour indiquer qu'il est cliquable */
 }
+
+/* Timeline CSS */
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: linear-gradient(180deg, #a855f7, #ec4899);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item::after {
+    content: '▼';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -27px;
+    top: 50%;
+    color: #a855f7;
+    transform: translateY(-50%);
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.right::after {
+    left: -17px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #2d2d2d;
+    border-radius: 8px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-content h3{
+    color: #adb5bd;
+}
+.timeline-content p{
+    color: #adb5bd;
+    
+}
+.timeline-content em{
+    color: #adb5bd;
+}
+
+.timeline-content:hover {
+    border-color: rgba(168, 85, 247, 0.5);
+    transform: translateY(-5px);
+}
+
+.timeline-date {
+    color: #a855f7;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content a {
+    color: #a855f7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.timeline-content a:hover {
+    color: #ec4899;
+    text-decoration: underline;
+}
+
+.btn-outline-light.active {
+    background-color: #a855f7;
+    border-color: #a855f7;
+}
+
+.btn-outline-light:hover {
+    background-color: #a855f7;
+    border-color: #a855f7;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item.right {
+        left: 0;
+    }
+    
+    .timeline-item::after {
+        left: 14px;
+    }
+}
+
+
+
+
 /* Ajustement pour les écrans plus petits */
 @media (max-width: 576px) { /* Cible les écrans de moins de 576px */
     .flecheMonter {
