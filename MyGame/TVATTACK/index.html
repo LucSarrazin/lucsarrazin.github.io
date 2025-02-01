@@ -29,9 +29,31 @@
         <h3>Clique Molette pour changer d'arme</h3>
         <h3>E pour interagir</h3>
       </div>
+      
+
+    <!-- Croix directionnelle -->
+    <div id="dpad">
+      <div class="dpad-button" id="dpad1" style="grid-column: 1; grid-row: 2;"></div>
+      <label id="b">B</label>
+      <div class="dpad-button" id="dpad2" style="grid-column: 3; grid-row: 3;"></div>
+      <label id="a">A</label>
+    </div>
+
+  <!-- Boutons A et B -->
+  <div id="gameboy-buttons">
+      <div class="button"></div>
+      <div class="button"></div>
+  </div>
+
+  <!-- Start / Select -->
+  <div id="start-select">
+      <div class="start-select-button"></div>
+      <label id="Start">Start</label>
+      <div class="start-select-button"></div>
+      <label id="Select">Select</label>
+  </div>
     </div>
     <script>
-
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -123,7 +145,6 @@
             };
 
       document.body.appendChild(script);
-
     </script>
   </body>
 </html>
