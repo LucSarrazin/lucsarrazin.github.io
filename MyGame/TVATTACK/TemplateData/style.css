@@ -14,173 +14,173 @@ body { padding: 0; margin: 0 }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
-
 body {
-    background: #b0b0b0; /* Couleur Gameboy classique */
-    color: #333;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
+    background: #b0b0b0 !important; /* Couleur Gameboy classique */
+    color: #333 !important;
+    font-family: 'Arial', sans-serif !important;
+    text-align: center !important;
+    display: flex !important;
+    height: 100vh !important;
+    overflow: hidden !important;
 }
 
 #unity-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: #808080; /* Couleur légèrement plus foncée pour la coque */
-    border-radius: 20px;
-    border: 5px solid #505050;
-    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.2);
-    position: relative;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    background: #808080 !important; /* Couleur légèrement plus foncée pour la coque */
+    border-radius: 20px !important;
+    border: 5px solid #505050 !important;
+    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5) inset 5px 5px 10px rgba(255, 255, 255, 0.2) !important;
+    position: relative !important;
 }
 
 canvas {
-    border: 8px solid black;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 8px solid black !important;
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 #unity-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    color: #fff;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    margin-top: 20px !important;
+    padding: 10px !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2) !important;
 }
 
 h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: red;
+    font-size: 24px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: red !important;
 }
 
 h3 {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* Boutons Gameboy */
 #gameboy-buttons {
-    position: absolute;
-    bottom: 12%;
-    left: 32%;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    rotate: -25deg;
+    position: absolute !important;
+    bottom: 12% !important;
+    left: 32% !important;
+    display: flex !important;
+    gap: 30px !important;
+    justify-content: center !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    rotate: -25deg !important;
 }
 #b {
-    position: absolute;
-    bottom: 110px;
-    left: 780px;
-    rotate: -25deg;
-    font-size: 20px;
-    color: rgb(71, 30, 184);
+    position: absolute !important;
+    bottom: 110px !important;
+    left: 780px !important;
+    rotate: -25deg !important;
+    font-size: 20px !important;
+    color: rgb(71, 30, 184) !important;
 }
 #a {
-    position: absolute;
-    bottom: 160px;
-    left: 900px;
-    rotate: -25deg;
-    font-size: 20px;
-    color: rgb(71, 30, 184);
+    position: absolute !important;
+    bottom: 160px !important;
+    left: 900px !important;
+    rotate: -25deg !important;
+    font-size: 20px !important;
+    color: rgb(71, 30, 184) !important;
 }
 
 .button {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, #ee2b5b, #222);
-    border-radius: 50%;
-    box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.5), inset 3px 3px 5px rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    transition: transform 0.1s ease-in-out;
+    width: 100px !important;
+    height: 100px !important;
+    background: radial-gradient(circle, #ee2b5b, #222) !important;
+    border-radius: 50% !important;
+    box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.5) inset 3px 3px 5px rgba(255, 255, 255, 0.2) !important;
+    cursor: pointer !important;
+    transition: transform 0.1s ease-in-out !important;
 }
 
 .button:active {
-    transform: scale(0.9);
+    transform: scale(0.9) !important;
 }
 
 /* Croix directionnelle */
 #dpad {
-    position: absolute;
-    left: 20px;
-    bottom: -50px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
+    position: absolute !important;
+    left: 20px !important;
+    bottom: -50px !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+    justify-content: center !important;
 }
 #dpad1 {
-    position: absolute;
-    left: 100px;
-    bottom: 250%;
-    width: 40px;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: absolute !important;
+    left: 100px !important;
+    bottom: 250% !important;
+    width: 40px !important;
+    height: 150px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
 }
 #dpad2 {
-    position: absolute;
-    left: 45px;
-    bottom: 340%;
-    width: 150px;
-    height: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    z-index: -99;
+    position: absolute !important;
+    left: 45px !important;
+    bottom: 340% !important;
+    width: 150px !important;
+    height: 40px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+    justify-content: center !important;
+    z-index: -99 !important;
 }
 
 .dpad-button {
-    width: 25px;
-    height: 25px;
-    background: #222;
-    border-radius: 5px;
-    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.5), inset 2px 2px 3px rgba(255, 255, 255, 0.2);
+    width: 25px !important;
+    height: 25px !important;
+    background: #222 !important;
+    border-radius: 5px !important;
+    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.5) inset 2px 2px 3px rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Boutons Start/Select */
 #start-select {
-    position: absolute;
-    bottom: 8%;
-    display: flex;
-    gap: 15px;
-    rotate: -25deg;
-    z-index: -99;
+    position: absolute !important;
+    bottom: 8% !important;
+    display: flex !important;
+    gap: 15px !important;
+    rotate: -25deg !important;
+    z-index: -99 !important;
 }
 
 .start-select-button {
-    width: 70px;
-    height: 15px;
-    background: #444;
-    border-radius: 10px;
-    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.5), inset 2px 2px 3px rgba(255, 255, 255, 0.2);
+    width: 70px !important;
+    height: 15px !important;
+    background: #444 !important;
+    border-radius: 10px !important;
+    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.5) inset 2px 2px 3px rgba(255, 255, 255, 0.2) !important;
 }
+
 #Start{
-    position: absolute;
-    font-size: 20px;
-    color: rgb(71, 30, 184);
-    bottom: -30px;
-    left: 9%;
+    position: absolute !important;
+    font-size: 20px !important;
+    color: rgb(71, 30, 184) !important;
+    bottom: -30px !important;
+    left: 9% !important;
 }
 #Select{
-    position: absolute;
-    font-size: 20px;
-    color: rgb(71, 30, 184);
-    bottom: -30px;
-    left: 59%;
+    position: absolute !important;
+    font-size: 20px !important;
+    color: rgb(71, 30, 184) !important;
+    bottom: -30px !important;
+    left: 59% !important;
 }
 
 
