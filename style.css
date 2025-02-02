@@ -297,3 +297,41 @@ header a{
     position: relative; /* Assurez-vous que les liens sont positionnés au-dessus */
     z-index: 1; /* S'assurer que les liens sont au-dessus du canvas */
 }
+
+
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Couleur de fond avec opacité */
+    z-index: 100000; /* Assurez-vous qu'il est au-dessus de tous les autres éléments */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-bar {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+}
+.bar-segment {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    opacity: 0;
+    animation: loading-animation 2s infinite;
+}
+.bar-segment:nth-child(1) { animation-delay: 0s; }
+.bar-segment:nth-child(2) { animation-delay: 0.2s; }
+.bar-segment:nth-child(3) { animation-delay: 0.4s; }
+.bar-segment:nth-child(4) { animation-delay: 0.6s; }
+.bar-segment:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes loading-animation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
