@@ -230,7 +230,7 @@ a:hover {
     border-color: #a855f7;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .timeline::after {
         left: 31px;
     }
