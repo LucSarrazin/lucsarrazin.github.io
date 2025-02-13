@@ -6,11 +6,10 @@
     <title>Unity WebGL Player | HotWaves</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1146 height=526 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,24 +21,7 @@
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">HotWaves</div>
-        <br>
-        <br>
-        <h1>Commandes du jeu : </h1>
-        <h3>Z | Q | S | D pour se déplacer</h3>
-        <h3>R pour recharger</h3>
-        <h3>Clique Molette pour changer d'arme</h3>
-        <h3>E pour interagir</h3>
       </div>
-      <div class="arcade">
-        <div class="screen"></div>
-        <div class="controls">
-            <div class="joystick"></div>
-            <div class="buttons">
-                <div class="button"></div>
-                <div class="button"></div>
-            </div>
-        </div>
-    </div>
     </div>
     <script>
 
@@ -112,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1146px";
+        canvas.style.height = "526px";
       }
 
       loadingBar.style.display = "block";
