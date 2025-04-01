@@ -336,6 +336,30 @@ header a{
     }
 }
 
+@media (max-width: 576px) { /* Cible les écrans de moins de 576px */
+    .jello-container {
+        font-size: 1.5rem;
+        gap: 2px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 723px) { /* Cible les écrans de moins de 576px */
+    .jello-container {
+        font-size: 1.5rem;
+        gap: 2px;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+    .jello-container {
+        font-size: 1.5rem;
+        gap: 2px;
+        max-width: 100%;
+    }
+}
+
 .loader-wrapper {
     position: fixed;
     top: 0;
