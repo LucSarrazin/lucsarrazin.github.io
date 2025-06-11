@@ -2251,7 +2251,7 @@
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
-            <p>&copy; 2025 Portfolio de Luc SARRAZIN. Tous droits réservés.</p>
+            <p>&copy; <span id="year"></span> Portfolio de Luc SARRAZIN. Tous droits réservés.</p>
             <a href="mentionLegale.html"><p>&copy; Mentions légales.</p></a>
         </div>
     </footer>
@@ -2261,6 +2261,8 @@
         });
         
         AOS.init();
+        
+        document.getElementById("year").textContent = new Date().getFullYear();
 
         new Typed('#typed',{
             strings : ['programmeur jeux vidéos', 'créateur de contenu','développeur web', 'développeur front-end', 'développeur back-end'],
