@@ -360,6 +360,68 @@ header a{
     }
 }
 
+/* Styles pour la section des compétences */
+.skills-row {
+    margin-top: 30px;
+}
+
+/* Styles pour chaque catégorie de compétences */
+.skills-category {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-category:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur des icônes */
+.skill-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espace entre les icônes */
+    padding: 20px;
+}
+
+/* Style des icônes */
+.skill-icons-container i {
+    font-size: 5rem; /* Taille des icônes, ajustez au besoin */
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+    filter: grayscale(10%); /* Légère désaturation */
+    cursor: pointer;
+}
+
+.skill-icons-container i:hover {
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+    filter: none; /* Rétablis la couleur originale */
+}
+
+
+.skill-icons-container img {
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+    filter: grayscale(10%); /* Légère désaturation */
+    cursor: pointer;
+}
+
+.skill-icons-container img:hover {
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+    filter: none; /* Rétablis la couleur originale */
+}
+
+/* Styles supplémentaires pour des icônes spécifiques si nécessaire */
+.devicon-threejs-original,
+.devicon-visualstudio-plain-wordmark,
+.devicon-vscode-plain,
+.devicon-jetbrains-plain {
+    font-size: 4rem; /* Ajustement de la taille pour certaines icônes */
+}
+
+
 .loader-wrapper {
     position: fixed;
     top: 0;
