@@ -106,7 +106,10 @@ footer p {
     margin: 0;
 }
 #home{
-    background-color: #2c3e50;
+    /*background-color: #2c3e50;*/
+    /*background: url('stacked-waves-haikei.svg') no-repeat center center/cover;*/
+    /*background: url('https://media.licdn.com/dms/image/v2/D4D16AQFX2ZERSfoqkg/profile-displaybackgroundimage-shrink_350_1400/B4DZxIRAfLI4AY-/0/1770738945135?e=1777507200&v=beta&t=yj2DXXETcAGAZj_hkWcx5sSdPup9mQ3nxE2GirAdnV4') no-repeat center center/cover;*/
+    background: url(Banner.png) no-repeat;
 }
 a {
  color: inherit; /* Hérite la couleur de l'élément parent */
@@ -135,6 +138,11 @@ a:hover {
     bottom: 20px; /* Ajuste cette valeur pour la hauteur par rapport au bas de l'écran */
     right: 20px;  /* Ajuste cette valeur pour l'espacement depuis le bord droit */
     cursor: pointer; /* Pour indiquer qu'il est cliquable */
+}
+.model-img {
+    height: 350px;
+    object-fit: contain;
+    background-color: #000; /* optionnel pour éviter le blanc */
 }
 
 
