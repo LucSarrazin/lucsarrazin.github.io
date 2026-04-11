@@ -48,6 +48,12 @@ body {
     margin-bottom: 1rem;
     color: #34495e;
 }
+.divider {
+    width: 50px;
+    height: 3px;
+    background: #e74c3c;
+    margin: 20px auto;
+}
 .section .divider {
     width: 50px;
     height: 3px;
@@ -58,12 +64,16 @@ body {
     margin-bottom: 15px;
 }
 .card img {
-    height: 200px;
     object-fit: cover;
 }
 .card2 {  
     opacity: 0.3;
     transition-duration: 1s;
+}
+.card{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem; /* Exemple d'arrondi */
 }
 
 .card2:hover{
@@ -116,7 +126,7 @@ a:hover {
     left: 0;
   }
 .carousel-item img{
-    opacity: 0.3;
+    opacity: 1;
 }
 .flecheMonter {
     z-index: 1000;
@@ -126,6 +136,7 @@ a:hover {
     right: 20px;  /* Ajuste cette valeur pour l'espacement depuis le bord droit */
     cursor: pointer; /* Pour indiquer qu'il est cliquable */
 }
+
 
 /* Timeline CSS */
 
@@ -351,6 +362,25 @@ header a{
     }
     
 }
+
+@media (min-width: 1600px) {
+  .container-xxl {
+    max-width: 1700px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-xxl {
+    max-width: 1900px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container-xxl {
+    max-width: 2200px;
+  }
+}
+
 
 @media screen and (max-width: 990px) {
     .jello-container {

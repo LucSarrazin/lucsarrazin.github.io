@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -31,6 +30,7 @@
     <!--Scroll Animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script> 
 
 
 
@@ -40,7 +40,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg" style="position: fixed;">
-        <div class="container">
+        <div class="container-xxl">
             <a class="navbar-brand" href="">Portfolio de Luc SARRAZIN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,7 +65,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="CV/Luc Sarrazin CV.pdf" target="_blank">CV</a>
+                        <a class="nav-link" href="https://drive.google.com/drive/u/2/folders/1PDUML3iNMCezYShu6kd46qaYRnPvj05a" target="_blank">CV</a>
                     </li>
                     <li class="nav-item dropdown" data-bs-theme="dark">
                         <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,12 +73,15 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><h6 class="dropdown-header">Jeux vidéos</h6></li>
-                            <li><a class="dropdown-item" href="#jeux">Mes jeux vidéos</a></li>
+                            <li><a class="dropdown-item" href="#jeux">Mes jeux vidéo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">3D</h6></li>
+                            <li><a class="dropdown-item" href="#3d">Mes projets 3D</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header">Projets Personnels</h6></li>
-                            <li><a class="dropdown-item" href="#p2025">Projet 2025</a></li>
-                            <li><a class="dropdown-item" href="#p2024">Projet 2024</a></li>
-                            <li><a class="dropdown-item" href="#p2023">Projet 2023</a></li>
+                            <li><a class="dropdown-item" href="#p2025">Projets 2025</a></li>
+                            <li><a class="dropdown-item" href="#p2024">Projets 2024</a></li>
+                            <li><a class="dropdown-item" href="#p2023">Projets 2023</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header">Projets Scolaires</h6></li>
                             <li><a class="dropdown-item" href="#pscolaire">Projets Scolaires</a></li>
@@ -115,9 +118,9 @@
     <!-- Header -->
     <header id="home" class="header text-center d-flex align-items-center hidden">
         <div id="particles-js" style="position: absolute; margin: 0 auto;width:100%; height:1000px;"></div>
-            <div class="container">
+            <div class="container-xxl">
                 <div class="col-lg-6 text-center mx-auto d-block">
-                    <img src="avatartest2.png" style="width: 40%;" class="img-fluid rounded-circle" alt="Photo de moi">
+                    <img src="photoDeMoi.jpg" style="width: 40%;" class="img-fluid rounded-circle" alt="Photo de moi">
                 </div>
                 <div class="container text-center">
                     <div class="jello-container" data-aos="fade-up" data-aos-delay="200">
@@ -174,7 +177,7 @@
         <div id="container3D"></div>
     </main>
 
-    <div class="loader-wrapper">
+    <!--<div class="loader-wrapper">
         <div class="loading-bar">
             <div class="bar-segment"></div>
             <div class="bar-segment"></div>
@@ -182,20 +185,20 @@
             <div class="bar-segment"></div>
             <div class="bar-segment"></div>
         </div>
-    </div>
+    </div>-->
 
     <!-- About Section -->
     <section id="about" class="section hidden">
-        <div class="container">
+        <div class="container-xxl">
             <h2 class="text-center">À propos de moi</h2>
             <div class="divider"></div>
             <div class="row">
                 <div class="col-lg-6">
-                    <p>Diplômé du BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM), je poursuis actuellement une Licence Informatique, parcours Jeux Vidéo, au CNAM ENJMIN en alternance. Passionné par les nouvelles technologies et les jeux vidéo, j'aime créer des expériences innovantes et captivantes en m'appuyant sur les compétences acquises durant mes formations et mes projets personnels.</p> 
-                    <p>Mon objectif professionnel est de devenir développeur de jeux vidéo.</p>
+                    <p>Diplômé d'un BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM), je poursuis actuellement une Licence Informatique, parcours Jeux Vidéo, au CNAM ENJMIN en alternance. <br> J'aime créer des expériences innovantes et captivantes en m'appuyant sur les compétences acquises durant mes formations et mes projets personnels.</p> 
+                    <p>Je suis un développeur de jeux vidéo.</p>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <img src="steamProfile.jpg" class="img-fluid rounded-circle" alt="Photo de moi">
+                    <img src="avatartest2.png" class="img-fluid rounded-circle" alt="Photo de moi">
                 </div>
             </div>
         </div>
@@ -203,7 +206,7 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section bg-light hidden">
-        <div class="container">
+        <div class="container-xxl">
             <h2 class="text-center">Mes compétences</h2>
             <div class="divider"></div>
             <div class="row skills-row">
@@ -256,98 +259,656 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section hidden">
-        <div class="container">
-            <h2 class="text-center" id="jeux">Mes jeux vidéos</h2>
+        <div class="container-xxl">
+            <h2 class="text-center" id="jeux">Mes jeux vidéo</h2>
     <div class="divider"></div>
     <div class="accordion hidden" id="accordionJeux">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneJeux" aria-expanded="true" aria-controls="collapseOneJeux">
                     <center>
-                        <h2 class="text-center">Mes jeux vidéos</h2>
+                        <h2 class="text-center">Mes jeux vidéo</h2>
                         <div class="divider"></div>
                     </center>
                 </button>
             </h2>
             <div id="collapseOneJeux" class="accordion-collapse collapse show" data-bs-parent="#accordionJeux">
                 <div class="accordion-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.BallBasket">
-                                <div class="card">
-                                    <div id="carouselBallBasket" class="carousel carousel-dark slide">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <!--<a href="" target="_blank">-->
+                                    <div class="card">
+                                        <div id="carouselObjectiveHapiness" class="carousel carousel-dark slide">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselBallBasket" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide-to="5" aria-label="Slide 6"></button>
                                         </div>
                                         <div class="carousel-inner">
-                                            <a href="https://play-lh.googleusercontent.com/772uDnoxvupnxLJQ2rjWFlJnHO9zNuvqHeiPj_svrV8rH82l4nlp3tWRwiw5yvRXUMU=w2560-h1440-rw" target="_blank" rel="noopener noreferrer">
-                                                <img src="https://play-lh.googleusercontent.com/772uDnoxvupnxLJQ2rjWFlJnHO9zNuvqHeiPj_svrV8rH82l4nlp3tWRwiw5yvRXUMU=w2560-h1440-rw" class="d-block w-100" alt="...">
+                                                <div class="carousel-item active" data-bs-interval="10000"> 
+                                                    <iframe
+                                                    width="100%"
+                                                    height="340"
+                                                    src="https://www.youtube.com/embed/x3lZuBsdu8Q"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen>
+                                                    </iframe>
+                                                </div>
+                                            <a href="Projets/Jeux/ObjectiveHapiness/building.webm" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <video class="d-block w-100" autoplay muted loop preload="metadata" playsinline>
+                                                        <source src="Projets/Jeux/ObjectiveHapiness/building.webm" type="video/webm">
+                                                        Votre navigateur ne supporte pas le tag vidéo.
+                                                    </video>
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObjectiveHapiness/workingAnimation.webm" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <video class="d-block w-100" autoplay muted loop preload="metadata" playsinline>
+                                                        <source src="Projets/Jeux/ObjectiveHapiness/workingAnimation.webm" type="video/webm">
+                                                        Votre navigateur ne supporte pas le tag vidéo.
+                                                    </video>
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObjectiveHapiness/mainMenu.webm" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <video class="d-block w-100" autoplay muted loop preload="metadata" playsinline>
+                                                        <source src="Projets/Jeux/ObjectiveHapiness/mainMenu.webm" type="video/webm">
+                                                        Votre navigateur ne supporte pas le tag vidéo.
+                                                    </video>
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObjectiveHapiness/transition.webm" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <video class="d-block w-100" autoplay muted loop preload="metadata" playsinline>
+                                                        <source src="Projets/Jeux/ObjectiveHapiness/transition.webm" type="video/webm">
+                                                        Votre navigateur ne supporte pas le tag vidéo.
+                                                    </video>
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObjectiveHapiness/endScreen.webm" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <video class="d-block w-100" autoplay muted loop preload="metadata" playsinline>
+                                                        <source src="Projets/Jeux/ObjectiveHapiness/endScreen.webm" type="video/webm">
+                                                        Votre navigateur ne supporte pas le tag vidéo.
+                                                    </video>
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide="prev" style="filter: invert(1);">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselObjectiveHapiness" data-bs-slide="next" style="filter: invert(1);">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                        <!-- <div class="text-center">
+                                            <img src="https://i.redd.it/acoyniper8781.gif" alt="Maintenance Icon" class="img-fluid " style="width: 200px; height: 300px;">
+                                            <div class="jello-container-xxl" data-aos="fade-up" data-aos-delay="200">
+                                                <span class="jello">E</span>
+                                                <span class="jello">N</span>
+                                                &nbsp;
+                                                <span class="jello">C</span>
+                                                <span class="jello">O</span>
+                                                <span class="jello">U</span>
+                                                <span class="jello">R</span>
+                                                <span class="jello">S</span>
+                                                &nbsp;
+                                            </div>
+                                        </div> -->
+
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Ball Basket</h5>
-                                        <h6 class="card-title">nov. 2022 - mars 2023</h6>
-                                        <p class="card-text">Ball Basket est un jeu de réflexion dont le but est d'envoyer une balle dans un panier de basket en utilisant la physique et certaines nouvelles mécaniques ajoutées au fur et à mesure des niveaux.</p>
-                                        <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.BallBasket" target="_blank"><i class="bi bi-google-play fs-2"></i></a>
-                                        <i style="font-size: 3rem; position: absolute; left: 80%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                        <i style="font-size: 3rem; position: absolute; left: 65%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <h5 class="card-title">Objective Happiness</h5>
+                                        <h6 class="card-title">4 Décembre 2025 - 8 Décembre 2025</h6>
+                                        <p class="card-text">Un jeu de gestion dans lequel le joueur devra gérer une population et leurs besoins. En <b>groupe de 4 (2 progs et 2 artistes)</b> sur <b>Unity (C#)</b> J'ai fait la <b>programmation des maisons et des écoles, des PNJ et du gestionnaire du jeu, les sons, l'interface utilisateur et le script des lettres, l'interface utilisateur et le script des statistiques des villageois</b></p>
+                                        <a href="https://plumeep.itch.io/objective-happiness" target="_blank"><i class="fab fa-itch-io fs-2"></i></a>
+                                        <br>
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 15%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <!--<button style="position: relative; left: 60%;"><a href="https://plumeep.itch.io/objective-happiness" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>-->
+                                    </div>
+                                </div>
+                            <!--</a>-->
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <!--<a href="" target="_blank">-->
+                                    <div class="card">
+                                        <div id="carouselPrototypeSH" class="carousel carousel-dark slide">
+                                        <!--<div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <a href="Projets/Jeux/ObeyMe/image1.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item active" data-bs-interval="10000">
+                                                    <img src="Projets/Jeux/ObeyMe/image1.png" class="d-block w-100" alt="La chambre">
+                                                    <div class="carousel-caption d-block">
+                                                        <h5>La chambre</h5>
+                                                        <p>Le commencement du jeu.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image2.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <img src="Projets/Jeux/ObeyMe/image2.png" class="d-block w-100" alt="Le salon">
+                                                    <div class="carousel-caption d-block">
+                                                        <h5>Le salon</h5>
+                                                        <p>Dans le salon, le joueur comprends la base du jeu</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image3.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/ObeyMe/image3.png" class="d-block w-100" alt="L'extérieur">
+                                                    <div class="carousel-caption d-block">
+                                                        <h5>L'extérieur</h5>
+                                                        <p>Une sortie à l’extérieur permet d’explorer l’environnement et d’avancer dans l’histoire.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image4.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/ObeyMe/image4.png" class="d-block w-100" alt="Le magasin">
+                                                    <div class="carousel-caption d-block">
+                                                        <h5>Le magasin</h5>
+                                                        <p>Le magasin permet d'accomplir des quêtes</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image5.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/ObeyMe/image5.png" class="d-block w-100" alt="Un monstre">
+                                                    <div class="carousel-caption d-block">
+                                                        <h5>Un monstre</h5>
+                                                        <p>Une des créatures disponibles durant le jeu</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrototypeSH" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>-->
+                                        
+                                        <a href="Projets/Jeux/PrototypeSH/Prototype.webm" target="_blank" rel="noopener noreferrer">
+                                            <video class="d-block w-100" autoplay muted loop controls preload="metadata" playsinline>
+                                                <source src="Projets/Jeux/PrototypeSH/Prototype.webm" type="video/webm">
+                                                Votre navigateur ne supporte pas le tag vidéo.
+                                            </video>
+                                        </a>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Prototype Shooter Survival Horror.</h5>
+                                        <h6 class="card-title">En cours</h6>
+                                        <p class="card-text">Un <b>prototype d'une Shooter Survival Horror</b> réalisé de A à Z par moi en <b>solo</b> dans le style des jeux commes Resident Evil Remake ou Silent Hill 2 Remake sur <b>Unreal Engine 5</b></p>
+                                        <br>
+                                        <!--<a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="fab fa-itch-io fs-2"></i></a>-->
+                                        <i style="font-size: 3rem; position: absolute; left: 89%; bottom: 4%;" class="devicon-unrealengine-plain" title="Unreal Engine"></i>
+                                        <!-- De base le bottom est à 1% et left à 85% -->
+                                        <!--<button style="position: relative; left: 60%;"><a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>-->
+                                    </div>
+                                </div>
+                            <!--</a>-->
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <a href="https://fantome-apparent.itch.io/no-scope" target="_blank">
+                                <div class="card">
+                                    <div id="carouselNoScope" class="carousel carousel-dark slide">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselNoScope" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselNoScope" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselNoScope" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselNoScope" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselNoScope" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <a href="Projets/Jeux/NoScope/Debut.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item active" data-bs-interval="10000">
+                                                    <img src="Projets/Jeux/NoScope/Debut.png" class="d-block w-100" alt="Le début du jeu">
+                                                    <!--<div class="carousel-caption d-block">-->
+                                                        <!--<h5>Le début</h5>-->
+                                                        <!--<p>Le commencement du jeu.</p>-->
+                                                    <!--</div>-->
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/NoScope/Dessin.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <img src="Projets/Jeux/NoScope/Dessin.png" class="d-block w-100" alt="Le mini jeu point & click">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/NoScope/Level2.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/NoScope/Level2.png" class="d-block w-100" alt="Le mini jeu smash clavier">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/NoScope/Drag.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/NoScope/Drag.png" class="d-block w-100" alt="Le mini jeu drag and drop">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/NoScope/MalDessin.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/NoScope/MalDessin.png" class="d-block w-100" alt="Un dessin raté">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoScope" data-bs-slide="prev" style="filter: invert(1);">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNoScope" data-bs-slide="next" style="filter: invert(1);">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">No Scope</h5>
+                                        <h6 class="card-title">27 Octobre 2025 - 29 Octobre 2025</h6>
+                                        <p class="card-text">No Scope a été réalisé en <b>50h</b> dans le cadre de l'Enjam, par une équipe de 6 étudiant de l'Enjmin, sur le thème : "It always end like this...". <b>J'ai programmé le mini jeu du clavier, le timer, Ecran de fin, PopUp Discord et la bar de build</b>. Le jeu est un wario-ware de fin de game jam pour build le jeu.</p>
+                                        <a href="https://fantome-apparent.itch.io/no-scope" target="_blank"><i class="fab fa-itch-io fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <br>
+                                        <i style="font-size: 3rem; position: absolute; right: 20%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 30%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <button style="position: relative; left: 85%;"><a href="https://fantome-apparent.itch.io/no-scope" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.HALLOWEENHUNT">
+                                
+                        <div class="col-md-6">
+                            <a href="https://lucsar.itch.io/obey-me" target="_blank">
                                 <div class="card">
-                                    <div id="carouselHalloweenHunt" class="carousel carousel-dark slide">
+                                    <div id="carouselObeyMe" class="carousel carousel-dark slide">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselHalloweenHunt" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="5" aria-label="Slide 6"></button>
                                         </div>
                                         <div class="carousel-inner">
-                                            <a href="https://play-lh.googleusercontent.com/tCgjRN77nurZYrrkupPemEeQxwGHGTjZ-NOC1BdWgrxjKr_HH8mqPdUbLgqPBCqtGHA=w2560-h1440-rw" target="_blank" rel="noopener noreferrer">
-                                                <img src="https://play-lh.googleusercontent.com/tCgjRN77nurZYrrkupPemEeQxwGHGTjZ-NOC1BdWgrxjKr_HH8mqPdUbLgqPBCqtGHA=w2560-h1440-rw" class="d-block w-100" alt="...">
+                                            <div class="carousel-item active" data-bs-interval="10000"> 
+                                                <iframe
+                                                width="100%"
+                                                height="340"
+                                                src="https://www.youtube.com/embed/Fe50qItZM6E"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; controls"
+                                                allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                            <a href="Projets/Jeux/ObeyMe/image1.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="10000">
+                                                    <img src="Projets/Jeux/ObeyMe/image1.png" class="d-block w-100" alt="La chambre">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image2.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <img src="Projets/Jeux/ObeyMe/image2.png" class="d-block w-100" alt="Le salon">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image3.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/ObeyMe/image3.png" class="d-block w-100" alt="L'extérieur">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image4.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/ObeyMe/image4.png" class="d-block w-100" alt="Le magasin">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/ObeyMe/image5.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/ObeyMe/image5.png" class="d-block w-100" alt="Un monstre">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselObeyMe" data-bs-slide="prev" style="filter: invert(1);">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselObeyMe" data-bs-slide="next" style="filter: invert(1);">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Halloween Hunt</h5>
-                                        <h6 class="card-title">oct. 2022 - oct. 2022</h6>
-                                        <p class="card-text">Un jeu pour Halloween réalisé en 2 heures, dans le style du Dino Chrome.</p>
-                                        <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.HALLOWEENHUNT" target="_blank"><i class="bi bi-google-play fs-2"></i></a>
-                                        <i style="font-size: 3rem; position: absolute; left: 80%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                        <i style="font-size: 3rem; position: absolute; left: 65%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <h5 class="card-title">Obey Me.</h5>
+                                        <h6 class="card-title">Août 2025 - Août 2025</h6>
+                                        <p class="card-text">Obey Me. est un jeu narratif horrifique créé <b>solo</b> en <b>1 semaine avec Unity (C#)</b> pour la <b>Brackeys Game Jam 2025.2 placé 105ème sur 2,284 entrées</b>, où les messages de ta mère deviennent de plus en plus inquiétants et mènent à deux fins différentes.</p>
+                                        <a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="fab fa-itch-io fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 20%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 30%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <button style="position: absolute; bottom: 2%; left: 83%;"><a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.com.Lucleterrible.Destroy.DestroyAllOfThem">
+
+                        <div class="col-md-6">
+                            <a href="" target="_blank">
+                                <div class="card"><div id="carouselNightAtSupermarket" class="carousel carousel-dark slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <a href="Projets/Jeux/NightAtSupermarket/Menu.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <img src="Projets/Jeux/NightAtSupermarket/Menu.png" class="d-block w-100" alt="Le menu du jeu">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/Jeux/NightAtSupermarket/LoadingScreen.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="Projets/Jeux/NightAtSupermarket/LoadingScreen.png" class="d-block w-100" alt="Écran de chargement">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/Jeux/NightAtSupermarket/Room.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item">
+                                                <img src="Projets/Jeux/NightAtSupermarket/Room.png" class="d-block w-100" alt="Une salle du jeu">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/Jeux/NightAtSupermarket/Locker.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item">
+                                                <img src="Projets/Jeux/NightAtSupermarket/Locker.png" class="d-block w-100" alt="Les casiers">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/Jeux/NightAtSupermarket/Cart.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item">
+                                                <img src="Projets/Jeux/NightAtSupermarket/Cart.png" class="d-block w-100" alt="Un caddie">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/Jeux/NightAtSupermarket/Jumpscare.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item">
+                                                <img src="Projets/Jeux/NightAtSupermarket/Jumpscare.png" class="d-block w-100" alt="Jumpscare du monstre">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide="prev" style="filter: invert(1);">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide="next" style="filter: invert(1);">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                            </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Night At Supermarket</h5>
+                                    <h6 class="card-title">Juin 2025 - Juin 2025</h6>
+                                    <p class="card-text">Découverte du moteur <b>Unreal Engine 5</b> à travers la création d’un jeu d’horreur <b>solo</b> en <b>2 semaines</b>, <b>intégrant une IA, du sound design, des énigmes</b> et diverses fonctionnalités.</p>
+                                    <!--<a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="fab fa-itch-io fs-2"></i></a>-->
+                                    <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-unrealengine-plain" title="Unreal Engine"></i>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <a href="https://lucsar.itch.io/just-another-day-again" target="_blank">
                                 <div class="card">
-                                    <div id="carouselDestroyAllOfThem" class="carousel carousel-dark slide">
+                                    <div id="carouselJustAnotherDayAgain" class="carousel carousel-dark slide">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselDestroyAllOfThem" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="4" aria-label="Slide 5"></button>
                                         </div>
                                         <div class="carousel-inner">
-                                            <a href="https://play-lh.googleusercontent.com/VNX5dL78p0d36fXEEiidU1EIbbV5HrmLKMlThiG580qlJ6vxhBPnXDJ8-jMoKGeJ1SwL=w2560-h1440-rw" target="_blank" rel="noopener noreferrer">
-                                                <img src="https://play-lh.googleusercontent.com/VNX5dL78p0d36fXEEiidU1EIbbV5HrmLKMlThiG580qlJ6vxhBPnXDJ8-jMoKGeJ1SwL=w2560-h1440-rw" class="d-block w-100" alt="...">
+                                            <div class="carousel-item active" data-bs-interval="10000"> 
+                                                <iframe
+                                                width="100%"
+                                                height="340"
+                                                src="https://www.youtube.com/embed/A04rHDVSqy0"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; controls"
+                                                allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                            <a href="Projets/Jeux/JustAnotherDayAgain/Bedroom.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="10000">
+                                                    <img src="Projets/Jeux/JustAnotherDayAgain/Bedroom.png" class="d-block w-100" alt="La chambre">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/JustAnotherDayAgain/Metro.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <img src="Projets/Jeux/JustAnotherDayAgain/Metro.png" class="d-block w-100" alt="Le métro">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/JustAnotherDayAgain/Pc and coffee.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/JustAnotherDayAgain/Pc and coffee.png" class="d-block w-100" alt="Le travail">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/JustAnotherDayAgain/final score.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/JustAnotherDayAgain/final score.png" class="d-block w-100" alt="Le score obtenues">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide="prev" style="filter: invert(1);">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide="next" style="filter: invert(1);">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Destroy All Of Them</h5>
-                                        <h6 class="card-title">juil. 2022 - juil. 2022</h6>
-                                        <p class="card-text">C'est un jeu de rapidité où l'objectif est de détruire le plus de boules possible dans un temps imparti, avec différents niveaux de difficulté.</p>
-                                        <a href="https://play.google.com/store/apps/details?id=com.com.Lucleterrible.Destroy.DestroyAllOfThem" target="_blank"><i class="bi bi-google-play fs-2"></i></a>
-                                        <i style="font-size: 3rem; position: absolute; left: 80%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                        <i style="font-size: 3rem; position: absolute; left: 65%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <h5 class="card-title">Just Another Day Again</h5>
+                                        <h6 class="card-title">Févr. 2025 - Févr. 2025</h6>
+                                        <p class="card-text">Just Another Day Again est un jeu créé <b>solo</b> en <b>1 semaine pour la Brackeys Game Jam 2025.1 placé 244ème sur 2,169 entrées</b>. Développé avec <b>Unity en C#</b>, Vous vivez une vie ordinaire et sans histoire, rien ne peut aller de travers ? N'est-ce pas ?</p>
+                                        <br>
+                                        <br>
+                                        <a href="https://lucsar.itch.io/just-another-day-again" target="_blank"><i class="fab fa-itch-io fs-2" style="position: absolute; bottom: 5%;"></i></a> 
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 15%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <!--<button style="position: relative; left: 60%;"><a href="https://lucsar.itch.io/just-another-day-again" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>-->
                                     </div>
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="row">
-                        <div class="col-md-4">
+                        
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div id="carouselAsteroids" class="carousel carousel-dark slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselAsteroids" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselAsteroids" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselAsteroids" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <a href="Projets/hors scolaire/2025/projet2/Menu.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <img src="Projets/hors scolaire/2025/projet2/Menu.png" class="d-block w-100" alt="Menu du jeu">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/hors scolaire/2025/projet2/Play.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="Projets/hors scolaire/2025/projet2/Play.png" class="d-block w-100" alt="Gameplay du jeu">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/hors scolaire/2025/projet2/Death.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item">
+                                                <img src="Projets/hors scolaire/2025/projet2/Death.png" class="d-block w-100" alt="Fin du jeu">
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAsteroids" data-bs-slide="prev" style="filter: invert(1);">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Précédent</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAsteroids" data-bs-slide="next" style="filter: invert(1);">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Suivant</span>
+                                    </button>
+                                </div>
+                                <a href="https://dodge-asteroids.netlify.app/" target="_blank">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dodge The Asteroids</h5>
+                                        <h 6 class="card-title">Juil. 2025 - Juil. 2025</h6>
+                                        <p class="card-text">Ce projet est la création d'un jeu vidéo arcade 3D développé en <b>solo</b> avec <b>Three.js</b>, jouable directement sur le web</p>
+                                        <a href="https://github.com/LucSarrazin/Dodge-The-Asteroids" target="_blank"><i class="bi bi-github fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-threejs-original" title="Three.js"></i>
+                                        <a href="https://dodge-asteroids.netlify.app/" target="_blank"><i class="bi bi-browser-chrome fs-2" style="position: absolute; bottom: 5%; left: 10%;"></i></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <a href="https://www.roblox.com/fr/games/136813961630013/Half-life-2-Tycoon" target="_blank">
+                                    <div class="card">
+                                        <div id="carouselTycoonRoblox" class="carousel carousel-dark slide">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <a href="Projets/Jeux/HL2Tycoon/Base.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item active" data-bs-interval="10000">
+                                                    <img src="Projets/Jeux/HL2Tycoon/Base.png" class="d-block w-100" alt="La base">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/HL2Tycoon/BaseV2.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                    <img src="Projets/Jeux/HL2Tycoon/BaseV2.png" class="d-block w-100" alt="Le début de la base">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/HL2Tycoon/Dropper.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/HL2Tycoon/Dropper.png" class="d-block w-100" alt="Les droppers">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/HL2Tycoon/Landscape.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/HL2Tycoon/Landscape.png" class="d-block w-100" alt="La vue d'ensemble">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="Projets/Jeux/HL2Tycoon/Paysage.png" target="_blank" rel="noopener noreferrer">
+                                                <div class="carousel-item">
+                                                    <img src="Projets/Jeux/HL2Tycoon/Paysage.png" class="d-block w-100" alt="Le paysage">
+                                                    <div class="carousel-caption d-block">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide="prev" style="filter: invert(1);">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTycoonRoblox" data-bs-slide="next" style="filter: invert(1);">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Half Life 2 Tycoon</h5>
+                                        <h6 class="card-title">Juil. 2025 - Août 2025</h6>
+                                        <p class="card-text">Half-Life 2 Tycoon est un tycoon développé en <b>solo</b> sur <b>Roblox Studio</b> dans l’univers de Half-Life 2. Le joueur construit progressivement sa base, débloque des objets iconiques et améliore ses installations tout en retrouvant l’environnement du jeu original.</p>
+                                        <br>
+                                        <br>
+                                        <!--<a href="https://www.roblox.com/fr/games/136813961630013/Half-life-2-Tycoon" target="_blank"><i class="fab fa-itch-io fs-2"></i></a>-->
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-lua-plain" title="Lua"></i>
+                                        <!--<button style="position: relative; left: 60%;"><a href="https://www.roblox.com/fr/games/136813961630013/Half-life-2-Tycoon" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
                             <div class="card">
                                 <div id="carouselTvAttack" class="carousel carousel-dark slide">
                                     <div class="carousel-indicators">
@@ -361,12 +922,20 @@
                                         <button type="button" data-bs-target="#carouselTvAttack" data-bs-slide-to="7" aria-label="Slide 8"></button>
                                     </div>
                                     <div class="carousel-inner">
+                                        <a href="Projets/Jeux/TVATTACK/Vidéo présentation de mon prototype de jeu TVATTACK.mp4" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item active" data-bs-interval="2000">
+                                                <video class="d-block w-100" autoplay muted loop>
+                                                    <source src="Projets/Jeux/TVATTACK/Vidéo présentation de mon prototype de jeu TVATTACK.mp4" type="video/mp4">
+                                                  Your browser does not support the video tag.
+                                                  </video>
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
                                         <a href="Projets/Jeux/TVATTACK/Market.png" target="_blank" rel="noopener noreferrer">
-                                            <div class="carousel-item active" data-bs-interval="10000">
+                                            <div class="carousel-item" data-bs-interval="10000">
                                                 <img src="Projets/Jeux/TVATTACK/Market.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>La boutique</h5>
-                                                    <p>Cette personne vend des soins à chaque manche.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -374,8 +943,6 @@
                                             <div class="carousel-item" data-bs-interval="2000">
                                                 <img src="Projets/Jeux/TVATTACK/Enemy.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Les ennemis du jeu</h5>
-                                                    <p>Les ordinateurs méchants à la tête rouge.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -383,8 +950,6 @@
                                             <div class="carousel-item">
                                                 <img src="Projets/Jeux/TVATTACK/Gun Shooting.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Utilisation de l'arme de base</h5>
-                                                    <p>Cette arme est moins rapide et fait moins de dégâts.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -392,8 +957,6 @@
                                             <div class="carousel-item" data-bs-interval="2000">
                                                 <img src="Projets/Jeux/TVATTACK/Gun Shooting2.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Utilisation de l'arme de base</h5>
-                                                    <p>Elle se décharge rapidement.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -401,8 +964,6 @@
                                             <div class="carousel-item">
                                                 <img src="Projets/Jeux/TVATTACK/Price Barricades.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Les barricades</h5>
-                                                    <p>On peut les ouvrir en les achetant avec les points.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -410,8 +971,6 @@
                                             <div class="carousel-item">
                                                 <img src="Projets/Jeux/TVATTACK/M4A1.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Deuxième arme du jeu</h5>
-                                                    <p>On peut l'acheter avec les points récoltés.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -419,29 +978,15 @@
                                             <div class="carousel-item">
                                                 <img src="Projets/Jeux/TVATTACK/Use M4A1.png" class="d-block w-100" alt="...">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Interface et vue avec la nouvelle arme</h5>
-                                                    <p>Utilisation de l'arme achetée.</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="Projets/Jeux/TVATTACK/Vidéo présentation de mon prototype de jeu TVATTACK.mp4" target="_blank" rel="noopener noreferrer">
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <video class="d-block w-100" autoplay muted loop>
-                                                    <source src="Projets/Jeux/TVATTACK/Vidéo présentation de mon prototype de jeu TVATTACK.mp4" type="video/mp4">
-                                                  Your browser does not support the video tag.
-                                                  </video>
-                                                <div class="carousel-caption d-block">
-                                                    <h5>Vidéo du jeu</h5>
-                                                    <p>Voici en vidéo l'apparence du jeu.</p>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTvAttack" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTvAttack" data-bs-slide="prev" style="filter: invert(1);">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTvAttack" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTvAttack" data-bs-slide="next" style="filter: invert(1);">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -450,15 +995,21 @@
                                     <a href="MyGame/TVATTACK/index.html" target="_blank">
                                     <h5 class="card-title">TVATTACK</h5>
                                     <h6 class="card-title">Févr. 2022 - Avr. 2022</h6>
-                                    <p class="card-text">TV ATTACK est un jeu de tir en vue subjective (FPS) où le joueur affronte des téléviseurs hostiles aux écrans rouges, gagne des points en les éliminant pour acheter des armes, des soins et débloquer de nouvelles zones, tout en interagissant avec un marchand à l’écran vert.</p>
+                                    <p class="card-text">TV ATTACK créé en <b>solo</b> est un jeu de tir à la première personne (FPS) sur <b>Unity (C#)</b> où le joueur affronte des téléviseurs hostiles aux écrans rouges, gagne des points en les éliminant pour acheter des armes, des soins et débloquer de nouvelles zones, tout en interagissant avec un marchand à l’écran vert.</p>
                                     </a>
-                                    <a href="https://github.com/LucSarrazin/TvAttack" target="_blank"><i class="bi bi-github fs-2"></i></a>
-                                    <button style="position: relative; left: 60%;"><a href="MyGame/TVATTACK/index.html" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
-                                    <i style="font-size: 3rem; position: absolute; left: 50%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                    <i style="font-size: 3rem; position: absolute; left: 35%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i></div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://github.com/LucSarrazin/TvAttack" target="_blank"><i class="bi bi-github fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                    <i style="font-size: 3rem; position: absolute; right: 20%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                    <i style="font-size: 3rem; position: absolute; right: 30%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                    <button style="position: absolute; bottom: 2%; left: 83%;"><a href="MyGame/TVATTACK/index.html" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        
+                        <div class="col-md-6">
                             <a href="" height="10000">
                                 <div class="card"><div id="carouselHotWaves" class="carousel carousel-dark slide">
                                     <div class="carousel-indicators">
@@ -468,12 +1019,20 @@
                                         <button type="button" data-bs-target="#carouselHotWaves" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                     </div>
                                     <div class="carousel-inner">
+                                        <a href="Projets/Jeux/HOTWAVES/video presentation hotwaves.mp4" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item active" data-bs-interval="2000">
+                                                <video class="d-block w-100" autoplay muted loop>
+                                                    <source src="Projets/Jeux/HOTWAVES/video presentation hotwaves.mp4" type="video/mp4" alt="Vidéo du jeu">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <div class="carousel-caption d-block">
+                                                </div>
+                                            </div>
+                                        </a>
                                         <a href="Projets/Jeux/HOTWAVES/Menu.png" target="_blank" rel="noopener noreferrer">
-                                            <div class="carousel-item active" data-bs-interval="10000">
+                                            <div class="carousel-item" data-bs-interval="10000">
                                                 <img src="Projets/Jeux/HOTWAVES/Menu.png" class="d-block w-100" alt="Le menu">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Le menu</h5>
-                                                    <p>Un simple menu avec le score.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -481,8 +1040,6 @@
                                             <div class="carousel-item" data-bs-interval="2000">
                                                 <img src="Projets/Jeux/HOTWAVES/Boss et enemy.png" class="d-block w-100" alt="Les ennemis du jeu">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Les ennemis du jeu</h5>
-                                                    <p>Il existe plusieurs variantes d'ennemis, des plus petits jusqu'aux boss.</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -490,29 +1047,15 @@
                                             <div class="carousel-item">
                                                 <img src="Projets/Jeux/HOTWAVES/player shooting.png" class="d-block w-100" alt="Utilisation de l'arme">
                                                 <div class="carousel-caption d-block">
-                                                    <h5>Utilisation de l'arme</h5>
-                                                    <p>Mécanique de tir</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="Projets/Jeux/HOTWAVES/video presentation hotwaves.mp4" target="_blank" rel="noopener noreferrer">
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <video class="d-block w-100" autoplay muted loop>
-                                                    <source src="Projets/Jeux/HOTWAVES/video presentation hotwaves.mp4" type="video/mp4" alt="Vidéo du jeu">
-                                                    Your browser does not support the video tag.
-                                                </video>
-                                                <div class="carousel-caption d-block">
-                                                    <h5>Vidéo du jeu</h5>
-                                                    <p>Voici en vidéo l'apparence du jeu.</p>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotWaves" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotWaves" data-bs-slide="prev" style="filter: invert(1);">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHotWaves" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHotWaves" data-bs-slide="next" style="filter: invert(1);">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -521,348 +1064,451 @@
                                     <div class="card-body">
                                         <h5 class="card-title">HotWaves</h5>
                                         <h6 class="card-title">Juil. 2022 - Juil. 2022</h6>
-                                        <p class="card-text">Développement d’un prototype inspiré de Space Invaders, intégrant des boss, des vaisseaux de soins et un changement dynamique de couleur d’arrière-plan.</p>
+                                        <p class="card-text">Développement d’un prototype inspiré de Space Invaders en <b>solo</b> avec <b>Unity (C#)</b>, intégrant des boss, des vaisseaux de soins et un changement dynamique de couleur d’arrière-plan.</p>
                                         </a>
-                                        <a href="https://github.com/LucSarrazin/HotWaves" target="_blank"><i class="bi bi-github fs-2"></i></a>
-                                        <i style="font-size: 3rem; position: absolute; left: 50%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                        <i style="font-size: 3rem; position: absolute; left: 35%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
-                                        <button style="position: relative; left: 60%;"><a href="MyGame/HOTWAVES/index.html" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
+                                        <a href="https://github.com/LucSarrazin/HotWaves" target="_blank"><i class="bi bi-github fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 20%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 30%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <button style="position: absolute; bottom: 2%; left: 83%;"><a href="MyGame/HOTWAVES/index.html" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+
+                        <div class="col-md-6">
                             <a href="MyGame/DINOCHROME/index.html" target="_blank">
                                 <div class="card">
                                     <a href="Projets/Jeux/DINOCHROME/ImageDuJeu.png" target="_blank" rel="noopener noreferrer">
                                         <div class="carousel-item active" data-bs-interval="10000">
                                             <img src="Projets/Jeux/DINOCHROME/ImageDuJeu.png" class="d-block w-100" alt="Image du jeu">
                                             <div class="carousel-caption d-block" style="color: black;">
-                                                <h5>Image du jeu</h5>
-                                                <p>Le jeu est littéralement le jeu de Google.</p>
                                             </div>
                                         </div>
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">DinoChrome</h5>
                                         <h6 class="card-title">Févr. 2023 - Févr. 2023</h6>
-                                        <p class="card-text">DinoChrome est un prototype recréant le célèbre jeu du dinosaure de Google Chrome. Développé avec Unity en C#, ce projet reprend le gameplay original où le joueur doit éviter des obstacles pour aller le plus loin possible.</p>
-                                        <a href="https://github.com/LucSarrazin/DinoChrome" target="_blank"><i class="bi bi-github fs-2"></i></a>
-                                        <i style="font-size: 3rem; position: absolute; left: 50%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                        <i style="font-size: 3rem; position: absolute; left: 35%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
-                                        <button style="position: relative; left: 60%;"><a href="MyGame/DINOCHROME/index.html" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
+                                        <p class="card-text">DinoChrome est un prototype recréant le célèbre jeu du dinosaure de Google Chrome. Développé en <b>solo</b> avec <b>Unity en C#</b>, ce projet reprend le gameplay original où le joueur doit éviter des obstacles pour aller le plus loin possible.</p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a href="https://github.com/LucSarrazin/DinoChrome" target="_blank"><i class="bi bi-github fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 20%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 30%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                        <button style="position: absolute; bottom: 2%; left: 83%;"><a href="MyGame/DINOCHROME/index.html" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.BallBasket">
+                                <div class="card">
+                                    <div id="carouselBallBasket" class="carousel carousel-dark slide">
+                                        <div class="carousel-inner">
+                                            <a href="https://play-lh.googleusercontent.com/772uDnoxvupnxLJQ2rjWFlJnHO9zNuvqHeiPj_svrV8rH82l4nlp3tWRwiw5yvRXUMU=w2560-h1440-rw" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://play-lh.googleusercontent.com/772uDnoxvupnxLJQ2rjWFlJnHO9zNuvqHeiPj_svrV8rH82l4nlp3tWRwiw5yvRXUMU=w2560-h1440-rw" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ball Basket</h5>
+                                        <h6 class="card-title">nov. 2022 - mars 2023</h6>
+                                        <p class="card-text">Ball Basket est un jeu de réflexion sur <b>Unity (C#)</b> en <b>solo</b> dont le but est d'envoyer une balle dans un panier de basket en utilisant la physique et certaines nouvelles mécaniques ajoutées au fur et à mesure des niveaux.</p>
+                                        <br>
+                                        <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.BallBasket" target="_blank"><i class="bi bi-google-play fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 15%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.HALLOWEENHUNT">
+                                <div class="card">
+                                    <div id="carouselHalloweenHunt" class="carousel carousel-dark slide">
+                                        <div class="carousel-inner">
+                                            <a href="https://play-lh.googleusercontent.com/tCgjRN77nurZYrrkupPemEeQxwGHGTjZ-NOC1BdWgrxjKr_HH8mqPdUbLgqPBCqtGHA=w2560-h1440-rw" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://play-lh.googleusercontent.com/tCgjRN77nurZYrrkupPemEeQxwGHGTjZ-NOC1BdWgrxjKr_HH8mqPdUbLgqPBCqtGHA=w2560-h1440-rw" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Halloween Hunt</h5>
+                                        <h6 class="card-title">oct. 2022 - oct. 2022</h6>
+                                        <p class="card-text">Un jeu pour Halloween réalisé sur <b>Unity (C#)</b> en <b>solo</b> en 2 heures, dans le style du Dino Chrome.</p>
+                                        <br>
+                                        <a href="https://play.google.com/store/apps/details?id=com.Lucleterrible.HALLOWEENHUNT" target="_blank"><i class="bi bi-google-play fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 15%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <a href="https://play.google.com/store/apps/details?id=com.com.Lucleterrible.Destroy.DestroyAllOfThem">
+                                <div class="card">
+                                    <div id="carouselDestroyAllOfThem" class="carousel carousel-dark slide">
+                                        <div class="carousel-inner">
+                                            <a href="https://play-lh.googleusercontent.com/VNX5dL78p0d36fXEEiidU1EIbbV5HrmLKMlThiG580qlJ6vxhBPnXDJ8-jMoKGeJ1SwL=w2560-h1440-rw" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://play-lh.googleusercontent.com/VNX5dL78p0d36fXEEiidU1EIbbV5HrmLKMlThiG580qlJ6vxhBPnXDJ8-jMoKGeJ1SwL=w2560-h1440-rw" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Destroy All Of Them</h5>
+                                        <h6 class="card-title">juil. 2022 - juil. 2022</h6>
+                                        <p class="card-text">C'est un jeu réalisé sur <b>Unity (C#)</b> en <b>solo</b> de rapidité où l'objectif est de détruire le plus de boules possible dans un temps imparti, avec différents niveaux de difficulté.</p>
+                                        <br>
+                                        <a href="https://play.google.com/store/apps/details?id=com.com.Lucleterrible.Destroy.DestroyAllOfThem" target="_blank"><i class="bi bi-google-play fs-2" style="position: absolute; bottom: 5%;"></i></a>
+                                        <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
+                                        <i style="font-size: 3rem; position: absolute; right: 15%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                        <div class="divider"></div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="https://lucsar.itch.io/just-another-day-again" target="_blank">
-                                            <div class="card"><div id="carouselJustAnotherDayAgain" class="carousel carousel-dark slide">
-                                                <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                </div>
-                                                <div class="carousel-inner">
-                                                    <a href="Projets/Jeux/JustAnotherDayAgain/Bedroom.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item active" data-bs-interval="10000">
-                                                            <img src="Projets/Jeux/JustAnotherDayAgain/Bedroom.png" class="d-block w-100" alt="La chambre">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>La chambre</h5>
-                                                                <p>Le commencement de chaque jour.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/JustAnotherDayAgain/Metro.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item" data-bs-interval="2000">
-                                                            <img src="Projets/Jeux/JustAnotherDayAgain/Metro.png" class="d-block w-100" alt="Le métro">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le métro</h5>
-                                                                <p>Installation de la routine Métro - Boulot - Dodo.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/JustAnotherDayAgain/Pc and coffee.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/JustAnotherDayAgain/Pc and coffee.png" class="d-block w-100" alt="Le travail">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le travail</h5>
-                                                                <p>La zone de travail où elle est remplie de collègues.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/JustAnotherDayAgain/final score.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/JustAnotherDayAgain/final score.png" class="d-block w-100" alt="Le score obtenues">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le résultat</h5>
-                                                                <p>Le score obtenues à la fin de la GAME JAM</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselJustAnotherDayAgain" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Just Another Day Again</h5>
-                                                <h6 class="card-title">Févr. 2025 - Févr. 2025</h6>
-                                                <p class="card-text">Just Another Day Again est un jeu produit en 1 semaine pour la Brackeys Game Jam 2025.1. Développé avec Unity en C#, Vous vivez une vie ordinaire et sans histoire, rien ne peut aller de travers ? N'est-ce pas ?</p>
-                                                <a href="https://lucsar.itch.io/just-another-day-again" target="_blank"><i class="fab fa-itch-io fs-2"></i></a> 
-                                                <i style="font-size: 3rem; position: absolute; left: 80%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                                <i style="font-size: 3rem; position: absolute; left: 65%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
-                                                <!--<button style="position: relative; left: 60%;"><a href="https://lucsar.itch.io/just-another-day-again" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>-->
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                
-                            <div class="col-md-4">
-                                    <a href="" target="_blank">
-                                            <div class="card"><div id="carouselNightAtSupermarket" class="carousel carousel-dark slide">
-                                                <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                    <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                                    <button type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                                </div>
-                                                <div class="carousel-inner">
-                                                    <a href="Projets/Jeux/NightAtSupermarket/Menu.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item active" data-bs-interval="10000">
-                                                            <img src="Projets/Jeux/NightAtSupermarket/Menu.png" class="d-block w-100" alt="Le menu du jeu">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le menu</h5>
-                                                                <p>Le menu en 3D avec un menu d’options fonctionnel.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/NightAtSupermarket/LoadingScreen.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item" data-bs-interval="2000">
-                                                            <img src="Projets/Jeux/NightAtSupermarket/LoadingScreen.png" class="d-block w-100" alt="Écran de chargement">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Écran de chargement</h5>
-                                                                <p>Un simple écran de chargement entre les scènes.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/NightAtSupermarket/Room.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/NightAtSupermarket/Room.png" class="d-block w-100" alt="Une salle du jeu">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Une salle</h5>
-                                                                <p>Une page dans la bibliothèque peut être lue pour obtenir des informations.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/NightAtSupermarket/Locker.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/NightAtSupermarket/Locker.png" class="d-block w-100" alt="Les casiers">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Les casiers</h5>
-                                                                <p>Peuvent servir de cachette contre le monstre (IA).</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/NightAtSupermarket/Cart.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/NightAtSupermarket/Cart.png" class="d-block w-100" alt="Un caddie">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Un caddie</h5>
-                                                                <p>Peut également servir de cachette contre le monstre (IA).</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/NightAtSupermarket/Jumpscare.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/NightAtSupermarket/Jumpscare.png" class="d-block w-100" alt="Jumpscare du monstre">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le jumpscare du monstre</h5>
-                                                                <p>Ce monstre est capable d’entendre quand on court et de se déplacer aléatoirement sur la carte.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselNightAtSupermarket" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Night At Supermarket</h5>
-                                                <h6 class="card-title">Juin 2025 - Juin 2025</h6>
-                                                <p class="card-text">Découverte du moteur Unreal Engine 5 à travers la création d’un jeu d’horreur en 2 semaines, intégrant une IA, du sound design, des énigmes et diverses fonctionnalités.</p>
-                                                <!--<a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="fab fa-itch-io fs-2"></i></a>-->
-                                                <i style="font-size: 3rem; position: absolute; left: 85%; bottom: 1%;" class="devicon-unrealengine-plain" title="Unreal Engine"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                            </div>
-                                
-                                <div class="col-md-4">
-                                    <div class="card">
-                                    <a>
-                                        <div id="carouselAsteroids" class="carousel carousel-dark slide">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselAsteroids" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselAsteroids" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselAsteroids" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <a href="Projets/hors scolaire/2025/projet2/Menu.png" target="_blank" rel="noopener noreferrer">
-                                                    <div class="carousel-item active" data-bs-interval="10000">
-                                                        <img src="Projets/hors scolaire/2025/projet2/Menu.png" class="d-block w-100" alt="Menu du jeu">
-                                                        <div class="carousel-caption d-block">
-                                                            <h5>Menu</h5>
-                                                            <p>Présentation du menu de Dodge The Asteroids.</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="Projets/hors scolaire/2025/projet2/Play.png" target="_blank" rel="noopener noreferrer">
-                                                    <div class="carousel-item" data-bs-interval="2000">
-                                                        <img src="Projets/hors scolaire/2025/projet2/Play.png" class="d-block w-100" alt="Gameplay du jeu">
-                                                        <div class="carousel-caption d-block">
-                                                            <h5>Gameplay</h5>
-                                                            <p>Exemple de partie en cours.</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="Projets/hors scolaire/2025/projet2/Death.png" target="_blank" rel="noopener noreferrer">
-                                                    <div class="carousel-item">
-                                                        <img src="Projets/hors scolaire/2025/projet2/Death.png" class="d-block w-100" alt="Fin du jeu">
-                                                        <div class="carousel-caption d-block">
-                                                            <h5>Ecran de fin</h5>
-                                                            <p>Affichage de l'écran de fin.</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAsteroids" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Précédent</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAsteroids" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Suivant</span>
-                                            </button>
-                                        </div>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Dodge The Asteroids</h5>
-                                            <h 6 class="card-title">Juil. 2025 - Juil. 2025</h6>
-                                            <p class="card-text">Ce projet est la création d'un jeu vidéo arcade 3D développé avec Three.js, jouable directement sur le web</p>
-                                            <a href="https://github.com/LucSarrazin/Dodge-The-Asteroids" target="_blank"><i class="bi bi-github fs-2"></i></a>
-                                            <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-threejs-original" title="Three.js"></i>
-                                            <a href="https://dodge-asteroids.netlify.app/" target="_blank"><i class="bi bi-browser-chrome fs-2"></i></a>
-                                          </div>
-                                    </a>
-                                    </div>
-                                </div>
-
-                            </div> 
-                            <div class="divider"></div>
-                            <div class="row">
-                                
-                                <div class="col-md-4">
-                                    <a href="https://lucsar.itch.io/obey-me" target="_blank">
-                                            <div class="card"><div id="carouselObeyMe" class="carousel carousel-dark slide">
-                                                <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                    <button type="button" data-bs-target="#carouselObeyMe" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                                </div>
-                                                <div class="carousel-inner">
-                                                    <a href="Projets/Jeux/ObeyMe/image1.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item active" data-bs-interval="10000">
-                                                            <img src="Projets/Jeux/ObeyMe/image1.png" class="d-block w-100" alt="La chambre">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>La chambre</h5>
-                                                                <p>Le commencement du jeu.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/ObeyMe/image2.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item" data-bs-interval="2000">
-                                                            <img src="Projets/Jeux/ObeyMe/image2.png" class="d-block w-100" alt="Le salon">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le salon</h5>
-                                                                <p>Dans le salon, le joueur comprends la base du jeu</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/ObeyMe/image3.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/ObeyMe/image3.png" class="d-block w-100" alt="L'extérieur">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>L'extérieur</h5>
-                                                                <p>Une sortie à l’extérieur permet d’explorer l’environnement et d’avancer dans l’histoire.</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/ObeyMe/image4.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/ObeyMe/image4.png" class="d-block w-100" alt="Le magasin">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Le magasin</h5>
-                                                                <p>Le magasin permet d'accomplir des quêtes</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="Projets/Jeux/ObeyMe/image5.png" target="_blank" rel="noopener noreferrer">
-                                                        <div class="carousel-item">
-                                                            <img src="Projets/Jeux/ObeyMe/image5.png" class="d-block w-100" alt="Un monstre">
-                                                            <div class="carousel-caption d-block">
-                                                                <h5>Un monstre</h5>
-                                                                <p>Une des créatures disponibles durant le jeu</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselObeyMe" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselObeyMe" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Obey Me.</h5>
-                                                <h6 class="card-title">Août 2025 - Août 2025</h6>
-                                                <p class="card-text">Obey Me. est un jeu narratif horrifique créé en 1 semaine avec Unity (C#) pour la Brackeys Game Jam 2025.2, où les messages de ta mère deviennent de plus en plus inquiétants et mènent à deux fins différentes.</p>
-                                                <a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="fab fa-itch-io fs-2"></i></a>
-                                                <i style="font-size: 3rem; position: absolute; left: 50%; bottom: 5%;" class="devicon-csharp-plain" title="C#"></i>
-                                                <i style="font-size: 3rem; position: absolute; left: 35%; bottom: 5%;" class="devicon-unity-plain" title="Unity"></i>
-                                                <button style="position: relative; left: 60%;"><a href="https://lucsar.itch.io/obey-me" target="_blank"><i class="bi bi-controller fs-1"></i> <h3>Jouer</h3> </a></button>
-                                            </div>
-                                        </div>
-                                    </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+            
+    <br id="3d">
+    <section class="container-xxl my-5">
+        <h2 class="text-center mb-4">Mes modèles 3D</h2>
+        <div class="divider mb-5"></div>
+
+        <div class="row g-4">
+
+            <!-- Image WIP et Final -->
+            <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <div id="carouselModel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- WIP -->
+                    <div class="carousel-item active position-relative">
+                    <a href="3D\LightHouse WIP.png" target="_blank">
+                        <img
+                        src="3D\LightHouse WIP.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Phare 3D WIP">
+                    </a>
+                    <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                        WIP
+                    </span>
+                    </div>
+
+                    <!-- Pre FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\LightHouse.png" target="_blank">
+                        <img
+                        src="3D\LightHouse.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Phare 3D pre-final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Pré-Final
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\LightHouse Blender.png" target="_blank">
+                        <img
+                        src="3D\LightHouse Blender.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Phare 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel1" data-bs-slide="prev" style="filter: invert(1);">
+                    <span class="carousel-control-prev-icon"
+                    style="filter: invert(1);"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModel1" data-bs-slide="next" style="filter: invert(1);">
+                    <span class="carousel-control-next-icon"
+                    style="filter: invert(1);"></span>
+                </button>
+                </div>
+
+                <div class="card-body">
+                <h5 class="card-title">île avec un phare</h5>
+                <h6 class="card-title">16 Janvier 2026</h6>
+                <p class="card-text text-muted">
+                    Blender · Sculpting · Low-Poly · Texturing · WIP → Final
+                </p>
+                </div>
+
+            </div>
+            </div>
+            
+            <!-- Image WIP et Final -->
+            <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <div id="carouselModel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- WIP -->
+                    <div class="carousel-item active position-relative">
+                    <a href="3D\Dungeon Pillars WIP.png" target="_blank">
+                        <img
+                        src="3D\Dungeon Pillars WIP.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Pilliers 3D WIP">
+                    </a>
+                    <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                        WIP
+                    </span>
+                    </div>
+
+                    <!-- WIP -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dungeon Wall WIP.png" target="_blank">
+                        <img
+                        src="3D\Dungeon Wall WIP.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Mur 3D WIP">
+                    </a>
+                    <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                        WIP
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dungeon1.png" target="_blank">
+                        <img
+                        src="3D\Dungeon1.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Donjon 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dungeon2.png" target="_blank">
+                        <img
+                        src="3D\Dungeon2.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Donjon 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dungeon3.png" target="_blank">
+                        <img
+                        src="3D\Dungeon3.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Donjon 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dungeon4.png" target="_blank">
+                        <img
+                        src="3D\Dungeon4.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Donjon 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dungeon5.png" target="_blank">
+                        <img
+                        src="3D\Dungeon5.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Donjon 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel2" data-bs-slide="prev" style="filter: invert(1);">
+                    <span class="carousel-control-prev-icon"
+                    style="filter: invert(1);"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModel2" data-bs-slide="next" style="filter: invert(1);">
+                    <span class="carousel-control-next-icon"
+                    style="filter: invert(1);"></span>
+                </button>
+                </div>
+
+                <div class="card-body">
+                <h5 class="card-title">Donjon</h5>
+                <h6 class="card-title">16 Janvier 2026 - 17 Janvier 2026</h6>
+                <p class="card-text text-muted">
+                    Blender · Low-Poly · Game-ready · Texturing · WIP → Final
+                </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Image WIP et Final -->
+            <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <div id="carouselModel3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- WIP -->
+                    <div class="carousel-item active position-relative">
+                    <a href="3D\Dinosaur WIP.png" target="_blank">
+                        <img
+                        src="3D\Dinosaur WIP.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Dinosaure 3D WIP">
+                    </a>
+                    <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                        WIP
+                    </span>
+                    </div>
+
+                    <!-- WIP -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\griffe.png" target="_blank">
+                        <img
+                        src="3D\griffe.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Griffe Dinosaure 3D WIP">
+                    </a>
+                    <span class="badge bg-warning position-absolute top-0 start-0 m-2">
+                        WIP
+                    </span>
+                    </div>
+
+                    <!-- FINAL -->
+                    <div class="carousel-item position-relative">
+                    <a href="3D\Dinosaurrrrrr.png" target="_blank">
+                        <img
+                        src="3D\Dinosaurrrrrr.png"
+                        class="d-block w-100 model-img"
+                        alt="Modèle Dinosaure 3D final">
+                    </a>
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                        Final
+                    </span>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel3" data-bs-slide="prev" style="filter: invert(1);">
+                    <span class="carousel-control-prev-icon"
+                    style="filter: invert(1);"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModel3" data-bs-slide="next" style="filter: invert(1);">
+                    <span class="carousel-control-next-icon"
+                    style="filter: invert(1);"></span>
+                </button>
+                </div>
+
+                <div class="card-body">
+                <h5 class="card-title">Dinosaure</h5>
+                <h6 class="card-title">18 Janvier 2026 - 20 Janvier 2026</h6>
+                <p class="card-text text-muted">
+                    Blender · Low-Poly · Texturing · WIP → Final
+                </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Image Simple -->
+            <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <a href="3D\forklift.png" target="_blank">
+                <img
+                    src="3D\forklift.png"
+                    class="card-img-top model-img"
+                    alt="Modèle Chariot Elevateur 3D – rendu final">
+                </a>
+
+                <div class="card-body">
+                <h5 class="card-title">Chariot Elevateur</h5>
+                <h6 class="card-title">15 Février 2025</h6>
+                <p class="card-text text-muted">
+                    Blender · Low-poly · Game-ready
+                </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Image Simple -->
+            <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <a href="3D\Computer.png" target="_blank">
+                <img
+                    src="3D\Computer.png"
+                    class="card-img-top model-img"
+                    alt="Modèle Ordinateur 3D – rendu final">
+                </a>
+
+                <div class="card-body">
+                <h5 class="card-title">Ordinateur</h5>
+                <h6 class="card-title">12 Janvier 2026</h6>
+                <p class="card-text text-muted">
+                    Blender · PSX-style
+                </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Image Simple -->
+            <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <a href="3D\Matches.png" target="_blank">
+                <img
+                    src="3D\Matches.png"
+                    class="card-img-top model-img"
+                    alt="Modèle Allumettes 3D unique">
+                </a>
+
+                <div class="card-body">
+                <h5 class="card-title">Allumettes</h5>
+                <h6 class="card-title">14 Janvier 2026</h6>
+                <p class="card-text text-muted">
+                    Blender · PSX-style · Game-ready · UV · Texturing
+                </p>
+                </div>
+
+            </div>
+            </div>
+
         </div>
-    
+        </section>
+
 
     <br>
     <h2 class="text-center">Mes projets personnels</h2>
@@ -872,15 +1518,15 @@
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePERSO" aria-expanded="true" aria-controls="collapseOnePERSO">
                 <center>
-                  <h2 class="text-center" id="p2025">Projet 2025</h2>
+                  <h2 class="text-center" id="p2025">Projets 2025</h2>
                   <div class="divider"></div>
                 </center>
             </button>
           </h2>
           <div id="collapseOnePERSO" class="accordion-collapse collapse show" data-bs-parent="#accordionPerso">
-            <div class="accordion-body">
+                <div class="accordion-body">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card">
                     <a>
                         <div id="carouselSolaire" class="carousel carousel-dark slide">
@@ -894,7 +1540,7 @@
                                     <div class="carousel-item active" data-bs-interval="10000">
                                         <img src="Projets/hors scolaire/2025/projet1/All.png" class="d-block w-100" alt="Le système solaire">
                                         <div class="carousel-caption d-block">
-                                            <h5>Système solaire interractif</h5>
+                                            <h5>Système solaire interactif</h5>
                                             <p>Une page permettant de visualiser les planètes et des fiches informatives.</p>
                                         </div>
                                     </div>
@@ -939,7 +1585,7 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card">
                     <a>
                         <div id="carouselAsteroidsJeux" class="carousel carousel-dark slide">
@@ -997,29 +1643,131 @@
                     </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                    <a>
-                          <div class="card-body">
-                            <h5 class="card-title">Three.js Voxel</h5>
-                            <h 6 class="card-title">Août 2025 - Août 2025</h6>
-                            <p class="card-text">Projet en cours de création qui s'inspire de Minecraft mais reproduit sur le web avec three.js</p>
-                            <br>
-                            <!--<a href="https://github.com/LucSarrazin/Calculateur-IMC" target="_blank"><i class="bi bi-github fs-2"></i></a>-->
-                            <i style="font-size: 3rem; position: absolute; right: 5%; bottom: 5%;" class="devicon-threejs-original" title="Three.js"></i>
-                          </div>
-                    </a>
+            </div>
+                <br>
+                <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div id="SystemeChat" class="carousel carousel-dark slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#SystemeChat" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#SystemeChat" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#SystemeChat" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <a href="Projets/systeme chat/Connection page.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <img src="Projets/systeme chat/Connection page.png" class="d-block w-100" alt="Aperçu de la page de connexion">
+                                                <div class="carousel-caption d-block">
+                                                    <h5>Connexion</h5>
+                                                    <p>La page de connexion au compte utilisateur dans la base MySQL</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/systeme chat/Création de compte page.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="Projets/systeme chat/Création de compte page.png" class="d-block w-100" alt="L'aperçu de la page de la création de compte">
+                                                <div class="carousel-caption d-block">
+                                                    <h5>Création du compte</h5>
+                                                    <p>La page de la création d'un compte utilisateur dans la base MySQL.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/systeme chat/Page chat.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="Projets/systeme chat/Page chat.png" class="d-block w-100" alt="L'aperçu de la page du chat">
+                                                <div class="carousel-caption d-block">
+                                                    <h5>Chat publique</h5>
+                                                    <p>La page chat.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#SystemeChat" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Précédent</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#SystemeChat" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Suivant</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Système de chat</h5>
+                                    <h6 class="card-title">Fév. 2025 - Mai 2025</h6>
+                                    <p class="card-text">Ce projet est une plateforme de discussion publique permettant aux utilisateurs de se connecter et de communiquer instantanément via une interface moderne et intuitive. Il est conçu en Node.js, avec Socket.io pour la gestion du chat en temps réel, une base de données MySQL pour stocker les utilisateurs et leurs messages.</p>
+                                    <a href="https://github.com/LucSarrazin/Systeme-de-Chat" target="_blank"><i class="bi bi-github fs-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div id="FeedbackIA" class="carousel carousel-dark slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#FeedbackIA" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#FeedbackIA" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#FeedbackIA" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <a href="Projets/feedback ia/analysePhrase.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <img src="Projets/feedback ia/analysePhrase.png" class="d-block w-100" alt="Aperçu de la page analyse de phrase">
+                                                <div class="carousel-caption d-block">
+                                                    <h5>Analyse phrase</h5>
+                                                    <p>La page analyse de phrase</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/feedback ia/LettreMotivation.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="Projets/feedback ia/LettreMotivation.png" class="d-block w-100" alt="L'aperçu de la page générateur de lettre de motivation">
+                                                <div class="carousel-caption d-block">
+                                                    <h5>Lettre de motivation</h5>
+                                                    <p>La page générateur de lettre de motivation.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="Projets/feedback ia/CorrecteurOrthographique.png" target="_blank" rel="noopener noreferrer">
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="Projets/feedback ia/CorrecteurOrthographique.png" class="d-block w-100" alt="L'aperçu de la page correcteur orthographique">
+                                                <div class="carousel-caption d-block">
+                                                    <h5>Correcteur orthographique</h5>
+                                                    <p>La page correcteur orthographique.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#FeedbackIA" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Précédent</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#FeedbackIA" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Suivant</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Système de Feedback IA</h5>
+                                    <h6 class="card-title">Fév. 2025 - Mai 2025</h6>
+                                    <p class="card-text">Ce projet est une plateforme innovante qui permet aux utilisateurs de soumettre des phrases ou des commentaires afin d'obtenir un retour instantané généré par une intelligence artificielle. 
+                                        Analyse syntaxique et sémantique des phrases, Génération automatique de lettres de motivation, adaptées à partir d'un CV fourni par l'utilisateur, Correction orthographique et grammaticale.
+                                        Le projet est développée avec Vue.js et avec l'api de Mistral AI
+                                    </p>
+                                    <a href="https://github.com/LucSarrazin/Systeme-de-feedback-IA" target="_blank"><i class="bi bi-github fs-2"></i></a>
+                                    <a href="https://systeme-de-feedback-ia.netlify.app/" target="_blank"><i class="bi bi-browser-chrome fs-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            </div>
+          </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPERSO" aria-expanded="true" aria-controls="collapseTwoPERSO">
                 <center>
-                  <h2 class="text-center" id="p2024">Projet 2024</h2>
+                  <h2 class="text-center" id="p2024">Projets 2024</h2>
                   <div class="divider"></div>
                 </center>
             </button>
@@ -1232,7 +1980,7 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePERSO" aria-expanded="false" aria-controls="collapseThreePERSO">
                 <center>
-                  <h2 class="text-center" id="p2023">Projet 2023</h2>
+                  <h2 class="text-center" id="p2023">Projets 2023</h2>
                   <div class="divider"></div>
                 </center>
             </button>
@@ -1604,7 +2352,6 @@
         </div>
     </div> -->
     
-    </div>
    <!--
             
             <br>
@@ -1871,7 +2618,7 @@
     
     <!-- Stages Section -->
     <section id="stages" class="section bg-light hidden">
-        <div class="container">
+        <div class="container-xxl">
             <h2 class="text-center">Mes stages et alternances</h2>
             <div class="divider"></div>
             <div class="row">
@@ -1922,7 +2669,7 @@
     
 <!-- Certification Section -->
 <section id="certif" class="section hidden">
-    <div class="container my-5">
+    <div class="container-xxl my-5">
         <h2 class="text-center">Mes certifications</h2>
         <div class="divider"></div>
         <ul class="nav nav-tabs hidden" id="certifTabs" role="tablist">
@@ -2308,7 +3055,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section bg-light hidden">
-        <div class="container">
+        <div class="container-xxl">
             <h2 class="text-center">Contactez-moi</h2>
             <div class="divider"></div>
             <div class="row">
@@ -2335,7 +3082,7 @@
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="container">
+        <div class="container-xxl">
             <p>&copy; <span id="year"></span> Portfolio de Luc SARRAZIN. Tous droits réservés.</p>
             <a href="mentionLegale.html"><p>&copy; Mentions légales.</p></a>
         </div>
@@ -2350,7 +3097,7 @@
         document.getElementById("year").textContent = new Date().getFullYear();
 
         new Typed('#typed',{
-            strings : ['programmeur jeux vidéos', 'créateur de contenu','développeur web', 'développeur front-end', 'développeur back-end'],
+            strings : ['programmeur jeux vidéo', 'créateur de contenu','développeur web', 'développeur front-end', 'développeur back-end'],
             typeSpeed : 100,
             delaySpeed : 40,
             backSpeed : 40,
@@ -2403,13 +3150,28 @@
         hiddenElements.forEach(element => {
             observer.observe(element);
         });
+        //Lenis documentation 
+        
+        // Initialize Lenis
+        const lenis = new Lenis();
+
+        // Use requestAnimationFrame to continuously update the scroll
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+
+
 
         // preloader loading screen
         
-    window.addEventListener('load', function() {
-        var preloader = document.querySelector('.loader-wrapper');
-        preloader.style.display = 'none'; // Masquer le préchargeur
-    });
+        /*window.addEventListener('load', function() {
+            var preloader = document.querySelector('.loader-wrapper');
+            preloader.style.display = 'none'; // Masquer le préchargeur
+        });*/
 
     </script>
 
