@@ -474,31 +474,6 @@
             </div>
         </div>
     </section>
-    
-        
-    <dialog class="dialog dialog-slide-up" id="slideUpDialog" style="height: 95%; width: 75%; background: rgba(64, 190, 240, 0.527);">
-        <div class="dialog-header">
-            <div>
-                <h1 class="dialog-title" id="NomProjets">Nom du jeu</h1>
-                <small id="DatesProjets"></small>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
-        </div>
-
-        <div class="dialog-body">
-            <p id="langagesProjets"></p>
-            <p id="DescriptionProjets"></p>
-            <p id="LiensProjets"></p>
-            <div id="galleryProjets"></div>
-        </div>
-
-        <div class="dialog-footer">
-            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">
-                Close
-            </button>
-        </div>
-    </dialog>
-
 
     <!-- Pour les projets-->
 
@@ -521,9 +496,294 @@
     </dialog>-->
     <br>
     <br>
+    <br id="certifications">
+    
+    <!-- Projects Section -->
+    <section class="section hidden">
+        <div class="card card-row card-translucent card-subtle theme-info" style="max-width: 100%; margin-left: 3%; margin-right: 3%">
+            <div class="card-body">
+                <h3 class="card-title" style="text-align: center;" id="TitleShadow">Mes certifications</h3>
+                <div class="divider"></div>
+                <div class="d-flex align-items-start">
+                    <div class="nav nav-pills nav-pills-vertical me-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-dev-tab" data-bs-toggle="tab" data-bs-target="#v-pills-dev" type="button" role="tab" aria-controls="v-pills-dev" aria-selected="true">Dév</button>
+                        <button class="nav-link" id="v-pills-reseaux-tab" data-bs-toggle="tab" data-bs-target="#v-pills-reseaux" type="button" role="tab" aria-controls="v-pills-reseaux" aria-selected="false">Réseaux / Cybersécurité</button>
+                        <button class="nav-link" id="v-pills-langues-tab" data-bs-toggle="tab" data-bs-target="#v-pills-langues" type="button" role="tab" aria-controls="v-pills-langues" aria-selected="false">Langues</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane show active" id="v-pills-dev" role="tabpanel" aria-labelledby="v-pills-dev-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Dev tab’s</strong> associated content.</p>
+                            <div class="row g-2">
+                                <!-- Carte 1 -->
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <button class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none w-100 border-0 p-3" data-bs-toggle="dialog" data-bs-target="#DialogPython">
+                                        <div class="scotch"></div>
+                                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                                            <img src="./Images/Python-logo.png" alt="Python Logo" class="img-fluid mb-2" style="max-height: 150px; object-fit: contain;">
+                                            <h3 class="h5 mb-0">Python</h3>
+                                        </div>
+                                    </button>
+                                </div>
+                                <!-- Carte 2 -->
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <button class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none w-100 border-0 p-3" data-bs-toggle="dialog" data-bs-target="#DialogJavascript">
+                                        <div class="scotch"></div>
+                                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                                            <img src="./Images/javascript-logo.png" alt="JavaScript Logo" class="img-fluid mb-2" style="max-height: 150px; object-fit: contain;">
+                                            <h3 class="h5 mb-0">JavaScript</h3>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="v-pills-reseaux" role="tabpanel" aria-labelledby="v-pills-reseaux-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Reseaux tab’s</strong> associated content.</p>
+                            <div class="row g-2">
+                                <!-- Carte 1 -->
+                                <div class="col-md-1 col-sm-2 col-4">
+                                    <button class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none w-100 border-0 p-3" data-bs-toggle="dialog" data-bs-target="#DialogMOOC">
+                                        <div class="scotch"></div>
+                                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                                            <img src="./Certifications/logo mooc.png" alt="Mooc ANSII Logo" class="img-fluid mb-2" style="max-height: 150px; object-fit: contain;">
+                                            <h3 class="h5 mb-0">MOOC ANSII</h3>
+                                        </div>
+                                    </button>
+                                </div>
+                                <!-- Carte 2 -->
+                                <div class="col-md-1 col-sm-3 col-4">
+                                    <button class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none w-100 border-0 p-3" data-bs-toggle="dialog" data-bs-target="#DialogCisco">
+                                        <div class="scotch"></div>
+                                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                                            <img src="./Certifications/Cisco_logo.png" alt="Cisco Logo" class="img-fluid mb-2" style="max-height: 150px; object-fit: contain;">
+                                            <h3 class="h5 mb-0">CISCO</h3>
+                                        </div>
+                                    </button>
+                                </div>
+                                <!-- Carte 2 -->
+                                <div class="col-md-1 col-sm-2 col-4">
+                                    <button class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none w-100 border-0 p-3" data-bs-toggle="dialog" data-bs-target="#DialogCCNA">
+                                        <div class="scotch"></div>
+                                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                                            <img src="./Certifications/cisco CCNA logo.png" alt="CCNA Cisco Logo" class="img-fluid mb-2" style="max-height: 150px; object-fit: contain;">
+                                            <h3 class="h5 mb-0">CCNA CISCO</h3>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="v-pills-langues" role="tabpanel" aria-labelledby="v-pills-langues-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Langues tab’s</strong> associated content.</p>
+                            <div class="row g-2">
+                                <!-- Carte 1 -->
+                                <div class="col-md-2 col-sm-4 col-6"> <!-- Classes de grille propres -->
+                                    <button class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none w-100 border-0 p-3" data-bs-toggle="dialog" data-bs-target="#DialogEnglish">
+                                        <div class="scotch"></div>
+                                        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                                            <img src="./Images/English_language.png" alt="Anglais Logo" class="img-fluid mb-2" style="max-height: 150px; object-fit: contain;">
+                                            <h3 class="h5 mb-0">Anglais</h3>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#slideUpDialog">
+    Slide up dialog
+    </button>-->
+
+    <dialog class="dialog dialog-slide-up " id="DialogPython" style="width: 70%; height:70%; border-color: aqua;">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Certification de Python</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <div class="row text-center">
+                <div class="col-6 mb-4">
+                    <a href="Certifications/Python_Certification_Essentials_1_Luc_Sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/Python_Certification_Essentials_1_Luc_Sarrazin.jpg" class="card-img-top" alt="Certification Python Essential 1">
+                            <div class="card-body">
+                                <h6 class="card-title">Python Essential 1 (Cisco)</h6>
+                                <p class="card-text text-muted">Décembre 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 mb-4">
+                    <a href="Certifications/Python_Essentials_2_Badge20241212-26-Luc_Sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/Python_Essentials_2_Badge20241212-26-Luc_Sarrazin.jpg" class="card-img-top" alt="Certification Python Essential 2">
+                            <div class="card-body">
+                                <h6 class="card-title">Python Essential 2 (Cisco)</h6>
+                                <p class="card-text text-muted">Décembre 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialog dialog-slide-up " id="DialogJavascript" style="width: 70%; height:70%; border-color: yellow;">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Certification de Javascript</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <div class="row text-center">
+                <div class="col-6 mb-4">
+                    <a href="Certifications/JavaScript_Essentials_1_Badge20241212-26-Luc_Sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/JavaScript_Essentials_1_Badge20241212-26-Luc_Sarrazin.jpg" class="card-img-top" alt="Certification JavaScript Essential 1">
+                            <div class="card-body">
+                                <h6 class="card-title">JavaScript Essential 1 (Cisco)</h6>
+                                <p class="card-text text-muted">Décembre 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 mb-4">
+                    <a href="Certifications/JavaScript_Essentials_2_Badge20250305-24-Luc_Sarrazin-f65cm2.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/JavaScript_Essentials_2_Badge20250305-24-Luc_Sarrazin-f65cm2.jpg" class="card-img-top" alt="Certification JavaScript Essential 2">
+                            <div class="card-body">
+                                <h6 class="card-title">JavaScript Essential 2 (Cisco)</h6>
+                                <p class="card-text text-muted">Mars 2025</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialog dialog-slide-up " id="DialogMOOC" style="width: 70%; height:70%; border-color: rgb(72, 92, 148);">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Certification de MOOC de l'ANSII</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <div class="row text-center">
+                <div class="col-6 mb-4">
+                    <a href="Certifications/Certification%20Mooc%20Ansii.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/Certification%20Mooc%20Ansii.pdf.png" class="card-img-top" alt="Certification MOOC ANSII">
+                            <div class="card-body">
+                                <h6 class="card-title">MOOC de l'ANSII</h6>
+                                <p class="card-text text-muted">Décembre 2023</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialog dialog-slide-up " id="DialogCisco" style="width: 90%; height:70%; border-color: rgb(17, 120, 180);">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Certification Cisco</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <div class="row text-center">
+                <div class="col-4 mb-4">
+                    <a href="Certifications/Introduction_to_Cybersecurity_Badge20241212-27-Luc_Sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/Introduction_to_Cybersecurity_Badge20241212-27-Luc_Sarrazin.jpg" class="card-img-top" alt="Certification Introduction to Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title">Introduction to Cybersecurity (Cisco)</h6>
+                                <p class="card-text text-muted">Décembre 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 mb-4">
+                    <a href="Certifications/IntrotoModernAIv120241219-25-Luc-sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/IntrotoModernAIv120241219-25-Luc-sarrazin.jpg" class="card-img-top" alt="Certification Introduction to Modern AI">
+                            <div class="card-body">
+                                <h6 class="card-title">Introduction to AI (Cisco)</h6>
+                                <p class="card-text text-muted">Décembre 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 mb-4">
+                    <a href="Certifications\Network_Technician_Career_Path_Badge20241121-26-Luc_Sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications\Network_Technician_Career_Path_Badge20241121-26-Luc_Sarrazin.jpg" class="card-img-top" alt="Certfication Network Technician Career Path Badge(Cisco)">
+                            <div class="card-body">
+                                <h5 class="card-title">Certfication Network Technician Career Path Badge (Cisco)</h5>
+                                <h6 class="card-title">Décembre 2024</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialog dialog-slide-up " id="DialogCCNA" style="width: 70%; height:70%; border-color: rgb(6, 140, 194);">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Certification de CCNA</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <div class="row text-center">
+                <div class="col-6 mb-4">
+                    <a href="Certifications/CCNAITN_20250409_Luc-SARRAZIN.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/CCNAITN_20250409_Luc-SARRAZIN.jpg" class="card-img-top" alt="Certfication CCNA: Introduction to Networks (Cisco)">
+                            <div class="card-body">
+                                <h5 class="card-title">Certfication CCNA: Introduction to Networks (Cisco)</h5>
+                                <h6 class="card-title">Avril 2025</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialog dialog-slide-up " id="DialogEnglish" style="width: 70%; height:70%; border-color: rgb(255, 0, 0);">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Certification d'Anglais</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <div class="row text-center">
+                <div class="col-6 mb-4">
+                    <a href="Certifications\English_for_IT_1_Badge20241212-24-Luc_Sarrazin.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications\English_for_IT_1_Badge20241212-24-Luc_Sarrazin.jpg" class="card-img-top" alt="Certfication English For IT 1 (Cisco)">
+                            <div class="card-body">
+                                <h5 class="card-title">Certfication English For IT 1 (Cisco)</h5>
+                                <h6 class="card-title">Décembre 2024</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 mb-4">
+                    <a href="Certifications/English_for_IT_2_Badge20241219-27-Luc-SARRAZIN.pdf" target="_blank">
+                        <div class="card border-0 shadow-sm">
+                            <img src="Certifications/English_for_IT_2_Badge20241219-27-Luc-SARRAZIN.jpg" class="card-img-top" alt="Certfication English For IT 2 (Cisco)">
+                            <div class="card-body">
+                                <h5 class="card-title">Certfication English For IT 2 (Cisco)</h5>
+                                <h6 class="card-title">Décembre 2024</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <br>
+    <br>
+    <br id="contact">
 
     <!-- Contact Section -->
-    <section id="contact" class="section hidden">
+    <section class="section hidden">
         <div class="card card-row card-translucent card-subtle theme-info" style="margin-left: 20%;margin-right: 20%;">
             <div class="card-body">
                 <center>
