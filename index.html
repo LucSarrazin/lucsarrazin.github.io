@@ -63,11 +63,11 @@
         </div>
     </nav>
 
-    <br>
+    <br id="home">
     <br>
     <br>
 
-    <section id="home" class="hidden">
+    <section class="hidden">
         <div id="particles-js" style="position: absolute; margin: 0 auto;width:100%; height:1000px;"></div>
         <div class="card card-translucent card-subtle theme-info text-center" style="width: 26%; margin-left: 3%;">
             <div class="card-header">
@@ -101,7 +101,7 @@
                     <span class="jello">O</span>
                 </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style>
                 <h1 class="card-title" id="TitleShadow">Luc SARRAZIN</h1>
                 <h4>Je suis un <span id="typed"></span> passionné par l'informatique et le développement de jeux vidéo</h4>
                 <!--<a href="#" class="btn-solid theme-primary mx-auto">Go somewhere</a>-->
@@ -140,13 +140,13 @@
     <br>
     <br>
     <br>
+    <br id="about">
     <br>
     <br>
-    <br>
-    <br>
+    <br >
     
     <!-- About Me Section -->
-    <section id="about" class="section hidden">
+    <section  class="section hidden">
         <div class="card card-row card-translucent card-subtle theme-info" style="max-width: 50%; margin-left: 3%;">
             <img src="./photoDeMoi.jpg" class="card-img-start img-fluid rounded-circle" alt="Une photo de moi">
             <div class="card-body">
@@ -158,242 +158,372 @@
         </div>
     </section>
 
+    <br id="competences">
+    <br>
+
+    <section  class="section hidden">
+        <center>
+            <div class="card card-row card-translucent card-subtle theme-info" style="margin-left: 20%; margin-right: 20%;">
+                <div class="card-body">
+                    <div class="container py-5 text-center">
+                        <h2 class="text-white mb-5 fw-bold" style="text-align: center;" id="TitleShadow">Mes compétences</h2>
+                        <div class="divider"></div>
+
+                        <!-- LIGNE 1 de la pyramide -->
+                        <div class="row justify-content-center g-2 mb-2">
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>HTML5</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Angular</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LIGNE 2 de la pyramide -->
+                        <div class="row justify-content-center g-2 mb-2">
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" alt="Vue.js" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Vue.js</span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="Three.js" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Three.js</span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>C#</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Java</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>C++</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Arduino</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LIGNE 3 de la pyramide -->
+                        <div class="row justify-content-center g-2 mb-2">
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Unity</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Unreal Engine</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Blender</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" alt="JetBrains" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>JetBrains</span>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/office-2.svg" alt="Microsoft Office" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Microsoft Office</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LIGNE 4 de la pyramide -->
+                        <div class="row justify-content-center g-2 mb-2">
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Github</span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="tech-card">
+                                    <div class="card border-0 bg-transparent">
+                                        <img src="./Compétences/Fork.png" alt="Fork" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                                    </div>
+                                    <span>Fork</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
+
     <br>
     <br>
+    <br id="projets">
+    
+    <!-- Projects Section -->
+    <section class="section hidden">
+        <div class="card card-row card-translucent card-subtle theme-info" style="max-width: 100%; margin-left: 3%; margin-right: 3%">
+            <div class="card-body">
+                <h3 class="card-title" style="text-align: center;" id="TitleShadow">Mes projets</h3>
+                <div class="divider"></div>
+                <div class="d-flex align-items-start">
+                    <div class="nav nav-pills nav-pills-vertical me-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="tab" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Jeux vidéo</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="tab" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Modèles 3D</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="tab" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Web</button>
+                        <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="tab" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="tab" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Home tab’s</strong> associated content.</p>
+                            <div class="row g-4">
+                                <!-- Carte 1 -->
+                                <div class="col-md-5 col-sm-5 text-center" style="max-width: 15%;max-height: 15%;">
+                                    <a href="./PageProjets/PathOfMatches.html" class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none" style="rotate: -1.6deg;">
+                                        <div class="scotch"></div>
+                                        <div class="card-body">
+                                            <img src="https://lucsarrazin.github.io/Projets/Jeux/PathOfMatches/affichepaysage-perso.png" class="img-fluid rounded mb-1" style="width: 100%; height: 100%;" alt="" loading="lazy">
+                                            <h3 class="h5">Path Of Matches</h3>
+                                            <p class="text-muted">Févr. - Juin 2026</p>
+                                            <p class="mt-2">Une gardienne de phare, une tempête, des tunnels et une boîte d'allumettes. Attention à la folie qui monte.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Carte 1 -->
+                                <div class="col-md-5 col-sm-5" style="max-width: 15%;max-height: 15%;">
+                                    <a href="./PageProjets/TapTheGlass.html" class="card projects card-translucent card-subtle theme-info h-100 text-decoration-none" style="rotate: -1.6deg;">
+                                        <div class="scotch"></div>
+                                        <div class="card-body">
+                                            <img src="./PageProjets/taptheglass/logo_itch3.png" class="img-fluid rounded mb-1" style="width: 100%; height: 100%;" alt="" loading="lazy">
+                                            <h3 class="h5">Tap the glass!</h3>
+                                            <p class="text-muted">Févr. - Févr. 2026</p>
+                                            <p class="mt-2">Un diorama d'océan interactif en 3D (4 artistes et 1 développeur) sur Unity (C#)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
 
-    <section id="competences">
-        <div class="container py-5 text-center">
-            <h2 class="text-white mb-5 fw-bold">TECH STACK</h2>
+                            <!--<div class="grid" id="grille">
+                                <a class="card" href="projet.html?id=path-of-matches" data-cat="jeu" style="--r: -1.6deg;">
+                                    <img src="https://lucsarrazin.github.io/Projets/Jeux/PathOfMatches/affichepaysage-perso.png" alt="" loading="lazy">
+                                    <h3>Path Of Matches</h3>
+                                    <small>Févr. - Juin 2026</small>
+                                    <p>Une gardienne de phare, une tempête, des tunnels et une boîte d'allumettes. Attention à la folie qui monte.</p>
+                                </a>
+                            </div>-->
 
-            <!-- LIGNE 1 de la pyramide -->
-            <div class="row justify-content-center g-2 mb-2">
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
                         </div>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                        <div class="tab-pane" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Profile tab’s</strong> associated content.</p>
                         </div>
-                        <span>HTML5</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                        <div class="tab-pane" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Messages tab’s</strong> associated content.</p>
                         </div>
-                        <span>CSS3</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                        <div class="tab-pane" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
                         </div>
-                        <span>PHP</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
+                        <div class="tab-pane" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <p>This is some placeholder content the <strong>Settings tab’s</strong> associated content.</p>
                         </div>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Bootstrap</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Angular</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Laravel</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LIGNE 2 de la pyramide -->
-            <div class="row justify-content-center g-2 mb-2">
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" alt="Vue.js" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Vue.js</span>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Node.js</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="Three.js" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Three.js</span>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Python</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>C#</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Java</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>C++</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Arduino</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LIGNE 3 de la pyramide -->
-            <div class="row justify-content-center g-2 mb-2">
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Unity</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Unreal Engine</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Blender</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Visual Studio</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" alt="JetBrains" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>JetBrains</span>
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.worldvectorlogo.com/logos/office-2.svg" alt="Microsoft Office" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Microsoft Office</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LIGNE 4 de la pyramide -->
-            <div class="row justify-content-center g-2 mb-2">
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Github</span>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="tech-card">
-                        <div class="card border-0 bg-transparent">
-                            <img src="./Compétences/Fork.png" alt="Fork" class="card-img-top mx-auto" style="width: 64px; height: 64px; object-fit: contain;">
-                        </div>
-                        <span>Fork</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+        
+    <dialog class="dialog dialog-slide-up" id="slideUpDialog" style="height: 95%; width: 75%; background: rgba(64, 190, 240, 0.527);">
+        <div class="dialog-header">
+            <div>
+                <h1 class="dialog-title" id="NomProjets">Nom du jeu</h1>
+                <small id="DatesProjets"></small>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+
+        <div class="dialog-body">
+            <p id="langagesProjets"></p>
+            <p id="DescriptionProjets"></p>
+            <p id="LiensProjets"></p>
+            <div id="galleryProjets"></div>
+        </div>
+
+        <div class="dialog-footer">
+            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">
+                Close
+            </button>
+        </div>
+    </dialog>
+
+
+    <!-- Pour les projets-->
+
+    <!--<button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#slideUpDialog">
+    Slide up dialog
+    </button>
+
+    <dialog class="dialog dialog-slide-up" id="slideUpDialog">
+    <div class="dialog-header">
+        <h1 class="dialog-title">Slide up dialog</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+        <p>This dialog slides up from the bottom of the viewport.</p>
+    </div>
+    <div class="dialog-footer">
+        <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+        <button type="button" class="btn-solid theme-primary">Save changes</button>
+    </div>
+    </dialog>-->
+    <br>
+    <br>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section hidden">
         <div class="card card-row card-translucent card-subtle theme-info" style="margin-left: 20%;margin-right: 20%;">
             <div class="card-body">
                 <center>
@@ -433,26 +563,6 @@
     </section>
 </body>
 
-
-<!-- Pour les projets-->
-
-<!--<button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#slideUpDialog">
-  Slide up dialog
-</button>
-
-<dialog class="dialog dialog-slide-up" id="slideUpDialog">
-  <div class="dialog-header">
-    <h1 class="dialog-title">Slide up dialog</h1>
-    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
-  </div>
-  <div class="dialog-body">
-    <p>This dialog slides up from the bottom of the viewport.</p>
-  </div>
-  <div class="dialog-footer">
-    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
-    <button type="button" class="btn-solid theme-primary">Save changes</button>
-  </div>
-</dialog>-->
 
 
 <!-- Footer -->

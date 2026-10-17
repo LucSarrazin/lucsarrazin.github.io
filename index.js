@@ -31,6 +31,24 @@ const observer = new IntersectionObserver(entries => {
     
 });
 
+/*
+
+// 1) Créer une carte par projet à partir de projects.js
+const grille = document.getElementById('grille');
+projects.forEach((p, i) => {
+  const a = document.createElement('a');
+  a.className = 'card';
+  a.href = 'projet.html?id=' + p.slug;            // la fiche lit cet "id" dans l'adresse
+  a.dataset.cat = p.cat;
+  a.hidden = p.cat !== 'jeu';                      // au départ on ne montre que les jeux
+  a.style.setProperty('--r', (i % 5 - 2) * 0.8 + 'deg'); // petite inclinaison
+  a.innerHTML = (p.img[0] ? `<img src="${encodeURI(p.img[0])}" alt="" loading="lazy">` : '') +
+    `<h3>${p.title}</h3><small>${p.date}</small><p>${p.desc}</p>`;
+  grille.appendChild(a);
+});
+
+*/
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(element => {
     observer.observe(element);

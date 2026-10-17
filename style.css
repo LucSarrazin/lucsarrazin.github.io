@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    background-color:#151a1f;
     margin: 0;
     overflow-x: hidden;
     font-family: "Pixelify Sans", sans-serif;
@@ -55,6 +56,107 @@ body {
     transform: translateY(-3px);
     background: rgba(255, 255, 255, 0.1);
 }
+
+
+
+.projects:hover{
+    transform:rotate(0) scale(1.03);z-index:2
+}
+.scotch{
+    position:absolute;
+    top:-10px;
+    left:30%;
+    width:70px;
+    height:20px;
+    background:rgba(255,179,71,.75);
+    transform:rotate(-3deg)
+}
+
+.projects{
+    /*background: rgba(255, 198, 119, 0.733);*/
+    background: rgba(30, 156, 240, 0.733);
+    text-decoration:none;
+    padding: 0% !important;
+    transition:transform .25s;
+    position:relative;
+    box-shadow:5px 6px 0 rgba(126, 126, 126, 0.45)
+}
+.projects img{
+    width:100%;
+    aspect-ratio:16/10;
+    object-fit:cover;
+    display:block;
+    image-rendering:auto;
+    margin-bottom:.5rem;
+    background:var(--mer)
+}
+#langagesProjets h4{
+    background: rgba(12, 18, 30);
+    color:#d1d7ce;
+}
+#LiensProjets a{
+    background: rgba(255, 179, 71);
+    color: #784306;
+    box-shadow: 2.5px 3px #d1442f;
+}
+
+#slideUpDialog{
+    /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
+    /**/margin-left: 1%;
+    margin-top: 1%;
+}
+
+#galleryProjets img,video{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+}
+
+/*
+.card{
+    background:var(--papier);
+    color:var(--nuit);
+    text-decoration:none;
+    padding:.7rem .7rem 1rem;
+    transform:rotate(var(--r));
+    transition:transform .25s;
+    position:relative;
+    box-shadow:5px 6px 0 rgba(0,0,0,.45)
+}
+.card[hidden]{
+    display:none
+}
+.card::before{
+    content:'';
+    position:absolute;
+    top:-10px;
+    left:40%;
+    width:70px;
+    height:20px;
+    background:rgba(255,179,71,.75);
+    transform:rotate(-3deg)
+}
+.card img{
+    width:100%;
+    aspect-ratio:16/10;
+    object-fit:cover;
+    display:block;
+    image-rendering:auto;
+    margin-bottom:.5rem;
+    background:var(--mer)
+}
+.card h3{
+    margin:.2rem 0;
+    font-size:1.3rem
+}
+.card small{
+    color:var(--phare)
+}
+.card p{
+    margin:.4rem 0 0;
+    font-size:.95rem;
+    line-height:1.4
+}*/
 
 /* Hidding and Showing Sections*/
 .hidden{
