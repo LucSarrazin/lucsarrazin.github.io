@@ -1,5 +1,4 @@
 import * as three from "three";
-import { TextureLoader } from "three";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { FireMesh } from '@wolffo/three-fire/vanilla';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';

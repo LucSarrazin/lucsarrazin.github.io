@@ -1,5 +1,4 @@
 import * as three from "three";
-import { TextureLoader } from "three";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { FireMesh } from '@wolffo/three-fire/vanilla';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
@@ -26,7 +25,7 @@ const scene = new three.Scene();
 //scene.fog = new three.Fog(0x000000, 0, 50);
 scene.fog = new three.FogExp2(0x000000, 0.15);
 const loader = new GLTFLoader();
-const textureLoader = new TextureLoader()
+const textureLoader = new three.TextureLoader()
 //const controls = new OrbitControls(camera, renderer.domElement);
 //controls.enableDamping = true;
 //controls.dampingFactor = 0.05;
