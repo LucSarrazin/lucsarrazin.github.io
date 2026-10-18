@@ -34,7 +34,7 @@ scene.background = skyTexture;
 scene.environment = skyTexture;
 
 // Particles.js
-particlesJS.load('particles-js', './taptheglass/particlesjs-config.json', function() {
+particlesJS.load('particles-js', "../particlesjs-config.json", function() {
         console.log('callback - particles.js config loaded');
 });
 
