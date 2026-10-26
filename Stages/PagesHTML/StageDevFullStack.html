@@ -14,41 +14,47 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body style="overflow-y: hidden;  background: url('../developpeur_full_stack.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-    <dialog class="dialog dialog-slide-up" id="slideUpDialog" open style="z-index:2;height: 90%; width: 75%; background: url('../blurry-gradient-haikei.png'); background-repeat: no-repeat; background-size: cover;margin-top: 3%;">
+    <dialog class="dialog dialog-slide-up" id="slideUpDialog" open style="z-index:2;height: 90%; width: 75%; background-color: rgb(75, 74, 74); background-repeat: no-repeat; background-size: cover;margin-top: 3%;">
         <a href="/index.html#experiences" class="btn-close" aria-label="Close" style="position:absolute; right: 1%; top: 2%; height: 3%; width: 3%; z-index: 100;"></a>
         <div class="dialog-body">
-            <h1 style="position:absolute; left: 3%; top: 5%; width: 40%; z-index: 100;">Stage Développeur Full-Stack</h1>
-            <h4 style="position:absolute; left: 3%; top: 13%; z-index: 500;">Janin Consulting</h4>
-            <h4 style="position:absolute; left: 3%; top: 18%; z-index: 500;">Mai 2024 - Juin 2024</h4>
-            <p id="langagesProjets">
-                <div style="position:absolute; left: 3%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 7%; height: 5%;">
-                    <h4 style="position:absolute; left: 10%; top: 5%; z-index: 500;"> Angular </h4>
+            <header class="mb-5">
+                <span class="badge text-bg-primary mb-3">Expérience professionnelle</span>
+                <h1 class="display-5 fw-bold">Stage Développeur Full-Stack</h1>
+                <p class="lead text-body-secondary mb-3">
+                    <i class="bi bi-building"></i> Janin Consulting
+                    <span class="mx-2">•</span>
+                    <i class="bi bi-calendar3"></i> Mai 2024 - Juin 2024
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">Angular</span>
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">MySql</span>
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">Spring Boot</span>
                 </div>
-                <div style="position:absolute; left: 11%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 7%; height: 5%;">
-                    <h4 style="position:absolute; left: 19%; top: 5%; z-index: 500;"> MySql </h4>
-                </div>
-                <div style="position:absolute; left: 19%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 9%; height: 5%;">
-                    <h4 style="position:absolute; left: 5%; top: 5%; z-index: 500;"> Spring Boot </h4>
-                </div>
-            </p>
-            <div id="DescriptionProjets" style="position:absolute; left: 3%; top: 30%; z-index: 500;">
-                <p>Création d’une application mobile, d'une API et d’un site web pour ModelAgencyHub.<br><br>  Qui est une plateforme innovante simplifiant la collaboration entre mannequins, 
-                    agences de mannequins et marques dans l’industrie de la mode et de la publicité. <br><br> La plateforme vise à optimiser les interactions, la gestion et le recrutement parmi ces entités grâce à des outils intuitifs et puissants.
+            </header>
+            <div id="DescriptionProjets">
+                <p>Création d’une application téléphone, un API et un site web ModelAgencyHub qui est une plateforme innovante qui simplifie la collaboration entre mannequins, agences de mannequins, et marques dans l’industrie de la mode et de la publicité.<br> 
+                La plateforme vise à optimiser les interactions, la gestion et le recrutement parmi ces entités grâce à des outils intuitifs et puissants.<br>
+
+                - Création d’une application mobile, d’une API et d’un site web.<br>
+                - Développement back-end avec Spring Boot.<br>
+                - Développement front-end avec Angular.<br>
+                - Gestion de base de données SQL.
                 </p>
             </div>
 
-            <div id="galleryProjets"style="position:absolute; left: 3%; top: 47%; z-index: 500; width: 95%;">
+            <div id="galleryProjets">
                 <div id="carouselMultiple" class="carousel slide" data-bs-autoplay="true" data-bs-ends="wrap" style="--bs-carousel-items: 4; --bs-carousel-items-gap: 1rem;">
                     <div class="d-flex justify-content-between align-items-center">
                         <h5 class="mb-0">Rapport de stage :</h5>
                     </div>
                 </div>
             </div>
-            <iframe src="../Luc Sarrazin Rapport de Stage1er.pdf"  class="d-block w-100 rounded-5" style="position:absolute; left: 3%; top: 51%; z-index: 500; width: 94%; height: 47%;"></iframe>
+            <br>
+            <iframe src="../Luc Sarrazin Rapport de Stage1er.pdf"  class="d-block w-100 rounded-5" style="width: 100%; height: 48%;"></iframe>
         </div>
         <div class="dialog-footer">
             <a href="/index.html#experiences" class="theme-warning btn-outline rounded-pill">

@@ -14,41 +14,48 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body style="overflow-y: hidden;  background: url('../developpeur_full_stack.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-    <dialog class="dialog dialog-slide-up" id="slideUpDialog" open style="z-index:2;height: 90%; width: 75%; background: url('../blurry-gradient-haikei.png'); background-repeat: no-repeat; background-size: cover;margin-top: 3%;">
+    <dialog class="dialog dialog-slide-up" id="slideUpDialog" open style="z-index:2;height: 90%; width: 75%; background-color: rgb(75, 74, 74); background-repeat: no-repeat; background-size: cover;margin-top: 3%;">
         <a href="/index.html#experiences" class="btn-close" aria-label="Close" style="position:absolute; right: 1%; top: 2%; height: 3%; width: 3%; z-index: 100;"></a>
         <div class="dialog-body">
-            <h1 style="position:absolute; left: 3%; top: 5%; width: 40%; z-index: 100;">Stage Développeur Full-Stack</h1>
-            <h4 style="position:absolute; left: 3%; top: 13%; z-index: 500;">Janin Consulting</h4>
-            <h4 style="position:absolute; left: 3%; top: 18%; z-index: 500;">Jan. 2025 - Mars 2025</h4>
-            <p id="langagesProjets">
-                <div style="position:absolute; left: 3%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 7%; height: 5%;">
-                    <h4 style="position:absolute; left: 10%; top: 5%; z-index: 500;"> Angular </h4>
+            <header class="mb-5">
+                <span class="badge text-bg-primary mb-3">Expérience professionnelle</span>
+                <h1 class="display-5 fw-bold">Stage Développeur Full-Stack</h1>
+                <p class="lead text-body-secondary mb-3">
+                    <i class="bi bi-building"></i> Janin Consulting
+                    <span class="mx-2">•</span>
+                    <i class="bi bi-calendar3"></i> Jan. 2025 - Mars 2025
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">Angular</span>
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">MySql</span>
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">Spring Boot</span>
                 </div>
-                <div style="position:absolute; left: 11%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 7%; height: 5%;">
-                    <h4 style="position:absolute; left: 19%; top: 5%; z-index: 500;"> MySql </h4>
-                </div>
-                <div style="position:absolute; left: 19%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 9%; height: 5%;">
-                    <h4 style="position:absolute; left: 5%; top: 5%; z-index: 500;"> Spring Boot </h4>
-                </div>
-            </p>
-            <div id="DescriptionProjets" style="position:absolute; left: 3%; top: 30%; z-index: 500;">
-                <p>Développement d’un bot IA pour la préparation aux entretiens – Ask, une solution SaaS innovante améliorant l’interaction entre recruteurs et candidats.<br><br> 
-                    Grâce à l’intelligence artificielle, le bot simule des entretiens personnalisés basés sur le CV et l’offre d’emploi, génère des questions dynamiques et fournit un feedback en temps réel avec scoring et rapport détaillé.
+            </header>
+            <div id="DescriptionProjets">
+                <p>
+                    Développement d’un bot IA pour la préparation aux entretiens – Ask<br>
+                    Ask est une solution SaaS qui optimise l’interaction entre recruteurs et candidats grâce à l’intelligence artificielle. Le bot que j’ai développé simule des entretiens interactifs basés sur le CV du candidat et l’offre d’emploi, fournissant des retours personnalisés et un scoring en temps réel.
+                    <br>
+                    - Conception et développement d’un bot IA pour la simulation d’entretiens.<br>
+                    - Génération dynamique de questions et analyse des réponses.<br>
+                    - Feedback en temps réel avec scoring et rapport PDF.<br>
+                    - Amélioration de l’expérience utilisateur grâce à des relances intelligentes.
                 </p>
             </div>
 
-            <div id="galleryProjets"style="position:absolute; left: 3%; top: 44%; z-index: 500; width: 95%;">
+            <div id="galleryProjets">
                 <div id="carouselMultiple" class="carousel slide" data-bs-autoplay="true" data-bs-ends="wrap" style="--bs-carousel-items: 4; --bs-carousel-items-gap: 1rem;">
                     <div class="d-flex justify-content-between align-items-center">
                         <h5 class="mb-0">Rapport de stage :</h5>
                     </div>
                 </div>
             </div>
-            <iframe src="../Luc Sarrazin Rapport de Stage 2eme.pdf"  class="d-block w-100 rounded-5" style="position:absolute; left: 3%; top: 48%; z-index: 500; width: 94%; height: 50%;"></iframe>
+            <br>
+            <iframe src="../Luc Sarrazin Rapport de Stage 2eme.pdf"  class="d-block w-100 rounded-5" style="width: 100%; height: 48%;"></iframe>
         </div>
         <div class="dialog-footer">
             <a href="/index.html#experiences" class="theme-warning btn-outline rounded-pill">
