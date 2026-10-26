@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obey Me.</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/",
+                "@wolffo/three-fire": "https://esm.sh/@wolffo/three-fire@1.4.0/vanilla",
+                "@wolffo/three-fire/vanilla": "https://esm.sh/@wolffo/three-fire@1.4.0/vanilla"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="overflow-y: hidden; background: url('./NightAtSupermarket/Locker.png'); background-repeat: no-repeat; background-size: cover;">
+
+    <dialog class="dialog dialog-slide-up" id="slideUpDialog" open style="z-index:2;height: 62%; width: 75%; background-color: rgb(43, 42, 42); background-repeat: no-repeat; background-size: cover;margin-top: 6%;">
+        <a href="../index.html#projets" class="btn-close" aria-label="Close" style="position:absolute; right: 1%; top: 2%; height: 3%; width: 3%; z-index: 100;"></a>
+        <div class="dialog-body">
+            <header class="mb-5">
+                <h1 class="display-5 fw-bold">Obey Me.</h1>
+                <p class="lead text-body-secondary mb-3">
+                    <i class="bi bi-calendar3"></i> Avril 2026 - Avril 2026
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">Unity</span>
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">C#</span>
+                    <span class="badge rounded-pill text-bg-light fs-6 px-3 py-2">AR</span>
+                </div>
+            </header>
+            <div id="DescriptionProjets">
+                <p> Développement d’une escape room en réalité virtuelle, conçue de manière modulaire en fonction du nombre de joueurs, en utilisant OpenXR et Netcode for GameObjects pour le multijoueur.<br>
+                Netcode for GameObjects, permets à plusieurs utilisateurs d’interagir simultanément dans un environnement partagé.<br>
+                 Mise en œuvre de communications réseau en temps réel et d’une architecture adaptée aux sessions multijoueurs.
+                </p>
+            </div>
+
+            <div id="galleryProjets">
+                <div id="carouselMultiple" class="carousel slide" data-bs-autoplay="true" data-bs-ends="wrap" style="--bs-carousel-items: 4; --bs-carousel-items-gap: 1rem;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Carousel d'images</h5>
+                        <div>
+                            <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselMultiple" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
+                                <span class="carousel-icon-pause" aria-hidden="true"></span>
+                                <span class="carousel-icon-play" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+                                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+                                <span class="carousel-icon-next" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <video class="d-block w-100 rounded-5" autoplay muted loop controls preload="metadata" playsinline>
+                                <source src="/Projets/Jeux/EscapeRoomVR/Video.webm" type="video/webm">
+                                Votre navigateur ne supporte pas le tag vidéo.
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100 rounded-5" autoplay muted loop controls preload="metadata" playsinline>
+                                <source src="/Projets/Jeux/EscapeRoomVR/Video2.webm" type="video/webm">
+                                Votre navigateur ne supporte pas le tag vidéo.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="../index.html#projets" class="btn-solid theme-secondary">
+                Retourner sur le portfolio
+            </a>
+        </div>
+    </dialog>
+</body>
+
+    <!-- Scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Particle.JS-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!--Animation d'écriture
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>-->
+
+    <!--confetti !!!-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!--Font Awesome (icons)-->
+    <!--<script src="https://kit.fontawesome.com/7969580627.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!--Scroll Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script> 
+
+</html>
