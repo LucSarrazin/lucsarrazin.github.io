@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Développeur Full-Stack</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/",
+                "@wolffo/three-fire": "https://esm.sh/@wolffo/three-fire@1.4.0/vanilla",
+                "@wolffo/three-fire/vanilla": "https://esm.sh/@wolffo/three-fire@1.4.0/vanilla"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="overflow-y: hidden;  background: url('../developpeur_full_stack.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <dialog class="dialog dialog-slide-up" id="slideUpDialog" open style="z-index:2;height: 90%; width: 75%; background: url('../blurry-gradient-haikei.png'); background-repeat: no-repeat; background-size: cover;margin-top: 3%;">
+        <a href="/index.html#experiences" class="btn-close" aria-label="Close" style="position:absolute; right: 1%; top: 2%; height: 3%; width: 3%; z-index: 100;"></a>
+        <div class="dialog-body">
+            <h1 style="position:absolute; left: 3%; top: 5%; width: 40%; z-index: 100;">Stage Développeur Full-Stack</h1>
+            <h4 style="position:absolute; left: 3%; top: 13%; z-index: 500;">Janin Consulting</h4>
+            <h4 style="position:absolute; left: 3%; top: 18%; z-index: 500;">Mai 2024 - Juin 2024</h4>
+            <p id="langagesProjets">
+                <div style="position:absolute; left: 3%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 7%; height: 5%;">
+                    <h4 style="position:absolute; left: 10%; top: 5%; z-index: 500;"> Angular </h4>
+                </div>
+                <div style="position:absolute; left: 11%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 7%; height: 5%;">
+                    <h4 style="position:absolute; left: 19%; top: 5%; z-index: 500;"> MySql </h4>
+                </div>
+                <div style="position:absolute; left: 19%; top: 23%; z-index: 500; border-style: solid;border-width: 2px;border-color: #fafafa;border-radius: 15%; width: 9%; height: 5%;">
+                    <h4 style="position:absolute; left: 5%; top: 5%; z-index: 500;"> Spring Boot </h4>
+                </div>
+            </p>
+            <div id="DescriptionProjets" style="position:absolute; left: 3%; top: 30%; z-index: 500;">
+                <p>Création d’une application mobile, d'une API et d’un site web pour ModelAgencyHub.<br><br>  Qui est une plateforme innovante simplifiant la collaboration entre mannequins, 
+                    agences de mannequins et marques dans l’industrie de la mode et de la publicité. <br><br> La plateforme vise à optimiser les interactions, la gestion et le recrutement parmi ces entités grâce à des outils intuitifs et puissants.
+                </p>
+            </div>
+
+            <div id="galleryProjets"style="position:absolute; left: 3%; top: 47%; z-index: 500; width: 95%;">
+                <div id="carouselMultiple" class="carousel slide" data-bs-autoplay="true" data-bs-ends="wrap" style="--bs-carousel-items: 4; --bs-carousel-items-gap: 1rem;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Rapport de stage :</h5>
+                    </div>
+                </div>
+            </div>
+            <iframe src="../Luc Sarrazin Rapport de Stage1er.pdf"  class="d-block w-100 rounded-5" style="position:absolute; left: 3%; top: 51%; z-index: 500; width: 94%; height: 47%;"></iframe>
+        </div>
+        <div class="dialog-footer">
+            <a href="/index.html#experiences" class="theme-warning btn-outline rounded-pill">
+                Retourner sur le portfolio
+            </a>
+        </div>
+    </dialog>
+</body>
+
+    <!-- Scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Particle.JS-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!--Animation d'écriture
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>-->
+
+    <!--confetti !!!-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!--Font Awesome (icons)-->
+    <!--<script src="https://kit.fontawesome.com/7969580627.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!--Scroll Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script> 
+
+</html>
