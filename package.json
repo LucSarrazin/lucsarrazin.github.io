@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "devicons": "^2.4.0",
     "gh-pages": "^6.1.1",
     "particles.js": "^2.0.0"
   },
