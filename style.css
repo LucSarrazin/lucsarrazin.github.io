@@ -100,6 +100,11 @@ body {
     color: #784306;
     box-shadow: 2.5px 3px #d1442f;
 }
+#LiensProjetsFeedBackIA a{
+    background: rgba(0, 123, 255);
+    color: #f7f8ff;
+    box-shadow: 2.5px 3px #e4e4e4;
+}
 
 #slideUpDialog{
     /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
