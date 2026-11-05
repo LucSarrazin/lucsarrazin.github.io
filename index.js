@@ -58,13 +58,12 @@ hiddenElements.forEach(element => {
 //Lenis documentation         
 // Lenis
 const lenis = new Lenis();
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-lenis.raf(time);
-requestAnimationFrame(raf);
-}
+lenis.on("scroll", ScrollTrigger.update);
+gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+});
 
-requestAnimationFrame(raf);
+gsap.ticker.lagSmoothing(0);
 
 
 // preloader loading screen
@@ -73,3 +72,20 @@ requestAnimationFrame(raf);
     var preloader = document.querySelector('.loader-wrapper');
     preloader.style.display = 'none'; // Masquer le préchargeur
 });*/
+
+const overlay = document.getElementById('fade-overlay');
+
+export let oneTime = false;
+export function fadeToBlack() {
+    oneTime = true;
+    overlay.classList.add('active');
+    
+    setTimeout(function(){
+        fadeFromBlack();
+        oneTime = false;
+    }, 2000);
+}
+
+export function fadeFromBlack() {
+    overlay.classList.remove('active');
+}

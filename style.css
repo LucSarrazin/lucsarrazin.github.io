@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -2;
     image-rendering: pixelated;
     pointer-events: none;
 }
@@ -145,6 +145,24 @@ body {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+}
+
+#fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#fade-overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 /*
 .card{
@@ -328,3 +346,213 @@ footer p {
         z-index: 1000;
     }
 }
+
+
+
+
+/* =====================================================================
+   RESPONSIVE (téléphone / tablette)
+   Les règles utilisent !important + sélecteurs d'attribut [style*=...]
+   pour surcharger les styles inline du HTML (largeurs en %, marges...)
+   et Bootstrap, chargé après ce fichier.
+   ===================================================================== */
+ 
+/* ---------- Tablette & moins (≤ 991px) ---------- */
+@media (max-width: 991.98px) {
+    html { scroll-padding-top: 72px; }
+    html, body { max-width: 100%; overflow-x: hidden; }
+    body { padding-top: 64px; }
+ 
+    /* Les <br> décoratifs servaient d'espacement desktop : on les remplace par des marges.
+       Les <br id="..."> restent des ancres de navigation (hauteur 0). */
+    body > br:not([id]) { display: none; }
+    body > br[id] { display: block; height: 0; scroll-margin-top: 72px; }
+    section.section, section.hidden { margin-bottom: 2.5rem; }
+ 
+    /* Cartes des sections : pleine largeur avec petites marges */
+    section .card[style*="margin-left"],
+    section .card[style*="max-width"] {
+        width: auto !important;
+        max-width: none !important;
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+    }
+    section center { display: block; }
+ 
+    /* Cartes de projets (avaient max-width: 15% !) : 2 par ligne */
+    .row > [style*="max-width: 15%"] {
+        max-width: none !important;
+        max-height: none !important;
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+ 
+    /* Layout "onglets verticaux" -> onglets au-dessus du contenu */
+    .d-flex.align-items-start { flex-direction: column; align-items: stretch !important; }
+    .nav-pills-vertical {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        margin: 0 0 1rem 0 !important;
+        width: 100%;
+    }
+    .nav-pills-vertical .nav-link,
+    .nav-pills-vertical .nav-item { width: auto; }
+    .tab-content { width: 100%; }
+ 
+    /* Fiches d'expériences : une carte par ligne */
+    .row.g-4 > .col { flex: 0 0 100%; max-width: 100%; }
+ 
+    /* Contact */
+    section div[style*="margin-left: 20%"] { margin-left: 0 !important; margin-right: 0 !important; }
+ 
+    /* Flèche "remonter" */
+    .flecheMonter { bottom: 16px; right: 16px; left: auto; transform: scale(.9); }
+}
+ 
+/* ---------- Téléphone (≤ 767px) ---------- */
+@media (max-width: 767.98px) {
+    .navbar[style*="fixed"] { top: 0; left: 0; }
+    #TitleShadow { text-align: center; }
+ 
+    /* Navbar : ne déborde plus, le menu s'ouvre dans le drawer */
+    .navbar .container-fluid { flex-wrap: nowrap; justify-content: space-between; gap: .5rem; }
+    .navbar-brand { font-size: 1.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .drawer { max-width: 85vw; }
+ 
+    /* Hero */
+    section .card[style*="width: 26%"] {
+        width: 92% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    section .card[style*="max-width: 50%"] {
+        max-width: none !important;
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+    }
+    .jello-container { font-size: 1.15rem; gap: 1px; max-width: 100%; }
+    .jello:hover { transform: scale(1.25); }
+    #TitleShadow { font-size: 1.15rem; line-height: 1.5; text-shadow: 2px 2px #ff5733; }
+    h3#TitleShadow, h2#TitleShadow { font-size: 1.05rem; }
+    .card-body h4 { font-size: 1.05rem; }
+    .card-body h4[style*="min-height"] { min-height: 7.5rem !important; }
+    .card-body h2 { display: flex; flex-wrap: wrap; justify-content: center; gap: .9rem; }
+    .card-body h2 a { line-height: 1; }
+    .arrow span { width: 14px; height: 14px; border-width: 4px; margin: -8px; }
+ 
+    /* À propos : photo au-dessus du texte */
+    .card-row { flex-direction: column; }
+    .card-row > .card-img-start {
+        width: 150px; height: 150px; object-fit: cover;
+        margin: 1.25rem auto 0; display: block;
+    }
+    .card-row > .card-img-start + .card-body { border-inline-start: 0; }
+    .card-row > .card-body { text-align: center; }
+    .divider { margin: 14px auto; }
+ 
+    /* Compétences : tuiles plus compactes */
+    .container.py-5 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; padding-left: .25rem; padding-right: .25rem; }
+    .tech-card { padding: 10px 8px; font-size: 12px; }
+    .tech-card img { width: 44px !important; height: 44px !important; }
+    .tech-card span { display: block; }
+    .row.justify-content-center.g-2 { --bs-gutter-x: .5rem; --bs-gutter-y: .5rem; }
+ 
+    /* Projets : 1 carte par ligne, plus de rotation qui fait déborder */
+    .row > [style*="max-width: 15%"] { width: 100% !important; }
+    .projects[style*="rotate"] { rotate: 0deg !important; }
+    .projects:hover { transform: none; }
+    .projects img { aspect-ratio: 16/10; }
+    .projects .card-body img { height: auto !important; }
+ 
+    /* Certifications / grilles de logos : images contenues */
+    .col-6 .projects img, .col-4 .projects img { max-height: 90px !important; }
+ 
+    /* Parcours : frise horizontale -> verticale */
+    .stepper-horizontal {
+        display: grid !important;
+        grid-auto-flow: row;
+        grid-auto-columns: auto;
+        text-align: left;
+    }
+    .stepper-horizontal .stepper-item {
+        grid-template-rows: auto;
+        grid-template-columns: var(--bs-stepper-size) 1fr;
+        align-items: center;
+        justify-items: start;
+        text-align: left;
+        padding-bottom: .75rem;
+    }
+    .stepper-horizontal .stepper-item::after {
+        inset-block-start: 50%;
+        inset-block-end: 100%;
+        inset-inline-start: calc(var(--bs-stepper-size) * .5 - var(--bs-stepper-track-size) * .5);
+        inset-inline-end: auto;
+        width: var(--bs-stepper-track-size);
+        height: calc(100% + var(--bs-stepper-gap));
+    }
+ 
+    /* Formulaire contact */
+    form .btn-subtle { width: 100%; }
+ 
+    footer { padding: 16px 12px; font-size: .9rem; }
+ 
+    /* ---------- Pages projet (PageProjets/*.html) ----------
+       Ces pages sont en position:absolute avec des % -> on les remet en flux normal. */
+    body[style*="overflow-y"] { overflow-y: auto !important; }
+    dialog.dialog[open] {
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        overflow-y: auto;
+        background-size: cover !important;
+        background-position: center top !important;
+    }
+    dialog.dialog .btn-close[style*="position"] {
+        position: fixed !important;
+        top: 10px !important; right: 10px !important;
+        width: 40px !important; height: 40px !important;
+        z-index: 1000 !important;
+    }
+    dialog.dialog .dialog-body { padding: 1rem; padding-top: 3.5rem; }
+    dialog.dialog .dialog-body [style*="position:absolute"],
+    dialog.dialog .dialog-body [style*="position: absolute"] {
+        position: static !important;
+        left: auto !important; top: auto !important; right: auto !important;
+        width: auto !important; height: auto !important;
+    }
+    dialog.dialog .dialog-body > img[style*="absolute"] {
+        display: block; width: 65% !important; max-width: 260px; margin: 0 auto 1rem;
+    }
+    #langagesProjets { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0; }
+    #langagesProjets > div,
+    dialog.dialog .dialog-body > div[style*="border-style"] {
+        display: inline-block !important; padding: .25rem .75rem; margin: 0 .5rem .5rem 0;
+    }
+    dialog.dialog .dialog-body > div[style*="border-style"] h4 { margin: 0; font-size: .95rem; }
+    #langagesProjets h4 { margin: 0; background: transparent; font-size: .95rem; }
+    #DescriptionProjets { margin: 1rem 0; }
+    #DescriptionProjets p br { display: none; }
+    #LiensProjets, #LiensProjetsFeedBackIA { width: 100% !important; display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+    #LiensProjets a, #LiensProjetsFeedBackIA a { width: auto !important; flex: 1 1 40%; text-align: center; }
+    #LiensProjets a.btn[style], #LiensProjetsFeedBackIA a.btn[style] { width: auto !important; }
+    #galleryProjets { width: 100% !important; }
+    #galleryProjets .carousel { --bs-carousel-items: 1 !important; }
+    #galleryProjets iframe { height: 220px; }
+    #galleryProjets video, #galleryProjets img { max-width: 100%; height: auto; }
+    dialog.dialog .dialog-footer { position: static; flex-wrap: wrap; justify-content: center; }
+}
+ 
+/* ---------- Très petits écrans (≤ 380px) ---------- */
+@media (max-width: 380px) {
+    .navbar-brand { font-size: .95rem; }
+    .jello-container { font-size: 1rem; }
+    .tech-card img { width: 38px !important; height: 38px !important; }
+}
+ 
