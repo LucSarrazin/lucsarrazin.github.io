@@ -71,7 +71,6 @@ function update(){
 }
 update();
 
-
 // Animation de scroll
 gsap.to(camera.position, {
     z: 6,
@@ -91,7 +90,7 @@ const timeline1 = gsap.timeline({
         start: "top top",
         end: "+=1150",
         scrub: 1,
-        markers: true
+        //markers: true
     }
 });
 timeline1.to(camera.position, {
@@ -131,7 +130,7 @@ const timeline2 = gsap.timeline({
         start: "top top",
         end: "+=1500",
         scrub: 1,
-        markers: true,
+        //markers: true,
 
         onEnter: () => {
             PathOfMatches.visible = true;
@@ -145,11 +144,19 @@ const timeline2 = gsap.timeline({
     }
 });
 
-timeline2.to(camera.position, {
-    z: -5,
-    duration: 2,
-    ease: "power2.inOut"
-});
+timeline2.fromTo(camera.position,
+    {
+        x: -4,
+        z: -10
+    },
+    {
+        x: -4,
+        z: -5,
+        duration: 2,
+        ease: "power2.inOut",
+        immediateRender: false
+    }
+);
 
 const timeline3 = gsap.timeline({
     scrollTrigger: {
@@ -157,7 +164,7 @@ const timeline3 = gsap.timeline({
         start: "top top",
         end: "+=1200",
         scrub: 1,
-        markers: true,
+        //markers: true,
         onEnter: () => {
             SH2.visible = false;
             PathOfMatches.visible = true;
@@ -191,9 +198,10 @@ timeline3.to(camera.position, {
 });
 
 function handleWindowResize () {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    ScrollTrigger.refresh();
 }
 window.addEventListener('resize', handleWindowResize, false);
 
@@ -211,17 +219,18 @@ window.onmousemove = function(ev)
 
   let changeX = ev.x - oldX;
   let changeY = ev.y - oldY;
-  camera.position.x += changeX/10000;
-  camera.position.y -= changeY/10000;
+  camera.position.x += changeX/9000;
+  camera.position.y -= changeY/9000;
 
   oldX = ev.x;
   oldY = ev.y;
 }
 
-window.addEventListener("pageshow", (event) => {
-    if (event.persisted) {
-        ScrollTrigger.refresh();
-    }
+window.addEventListener("pageshow", () => {
+    requestAnimationFrame(() => {
+        ScrollTrigger.refresh(true);
+        ScrollTrigger.update();
+    });
 });
 
 /*timeline1.to(camera.rotation, {
