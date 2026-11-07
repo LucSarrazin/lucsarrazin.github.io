@@ -460,7 +460,16 @@ footer p {
     .row.justify-content-center.g-2 { --bs-gutter-x: .5rem; --bs-gutter-y: .5rem; }
  
     /* Projets : 1 carte par ligne, plus de rotation qui fait déborder */
-    .row > [style*="max-width: 15%"] { width: 100% !important; }
+    /* Jeux vidéo + Web : 2 cartes par ligne (texte un peu plus compact) */
+    .row > [style*="max-width: 15%"] { width: 50% !important; }
+    .row > [style*="max-width: 15%"] .card-body { padding: .6rem; }
+    .row > [style*="max-width: 15%"] h3 { font-size: .95rem; }
+    .row > [style*="max-width: 15%"] p { font-size: .8rem; margin-bottom: .4rem; }
+    .row > [style*="max-width: 15%"] i[class*="devicon"] { font-size: 1.8rem !important; }
+    /* Modèles 3D : 1 carte par ligne */
+    #v-pills-profile .row > [class*="col-"] { flex: 0 0 100%; width: 100%; max-width: 100%; }
+    /* Onglet Modèles 3D : 1 carte par ligne comme Jeux vidéo / Web */
+    #v-pills-profile .row > [class*="col-6"] { flex: 0 0 100%; max-width: 100%; width: 100%; }
     .projects[style*="rotate"] { rotate: 0deg !important; }
     .projects:hover { transform: none; }
     .projects img { aspect-ratio: 16/10; }
